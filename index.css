@@ -1,0 +1,141 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #101010;
+}
+
+.page {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.max_page_width {
+	height: auto;
+	max-width: 1800px;
+	margin: auto;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent;
+	position: absolute;
+	left: 50%;
+	top: 48%;
+	transform: translate(-50%, 0);
+	font-weight: lighter;
+	z-index: 3;
+}
+
+.title p strong {
+	background-color: transparent;
+	font-size: 30px;
+	letter-spacing: 4px;
+}
+
+.title p {
+	background-color: transparent;
+	color: #FFFFFF;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	margin-top: 5px;
+}
+
+.background {
+	height: auto;
+	width: auto;
+}
+
+.main_carousel {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.tint {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	max-width: 1800px;
+	background-color: #100E1D;
+	opacity: 20%;
+	z-index: 2;
+}
+
+
+
+.quick-info {
+	height: 500px;
+}
+
+
+/* House Quick Details */
+
+.allign-horizontal {
+	display: flex;
+	flex-direction: row;
+}
+
+.icon {
+	height: auto;
+	width: 13px;
+	object-fit: contain;
+}
+
+.icon-small {
+	height: auto;
+	width: 20px;
+	object-fit: contain;
+	margin-right: 10px;
+}
+
+.allign-horizontal p {
+	color: #FFFFFF;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	font-weight: lighter;
+	margin-left: 5px;
+}
+
+.address {
+	margin-left: 23%;
+	margin-top: 120px;
+}
+
+.location {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+.location img {
+	margin-right: 10px;
+}
+
+
+
+.teren-casa {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.detalii-casa {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.casa {
+	margin-left: 200px;
+	margin-top: 80px;
+}
+
+.this-little-guy-is-annoying {
+	margin-top: 15px;
+}
