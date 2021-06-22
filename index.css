@@ -1,4 +1,6 @@
 
+/* || GENERAL */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,12 +16,14 @@
 
 .max_page_width {
 	height: auto;
-	max-width: 1800px;
+	max-width: 1920px;
 	margin: auto;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 }
+
+/* || VIDEO CAROUSEL */
 
 .title {
 	display: flex;
@@ -68,14 +72,13 @@
 	z-index: 2;
 }
 
-
-
 .quick-info {
-	height: 500px;
+	height: 400px;
 }
 
 
-/* House Quick Details */
+/* HOUSE QUICK INFO */
+
 
 .allign-horizontal {
 	display: flex;
@@ -138,4 +141,19 @@
 
 .this-little-guy-is-annoying {
 	margin-top: 15px;
+}
+
+
+/* || MAP */
+
+#map {
+	width: 100%;
+	height: 600px;
+	z-index: 3;
+}
+
+.padding {
+	width: 100%;
+	height: 300px;
+	background-color: #101010;
 }
