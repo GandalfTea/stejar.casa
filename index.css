@@ -5,6 +5,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body{
 	background-color: #101010;
 }
 
@@ -21,6 +24,7 @@
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
+	background-color: #101010;
 }
 
 /* || VIDEO CAROUSEL */
@@ -32,7 +36,7 @@
 	background-color: transparent;
 	position: absolute;
 	left: 50%;
-	top: 48%;
+	top: 52%;
 	transform: translate(-50%, 0);
 	font-weight: lighter;
 	z-index: 3;
@@ -54,23 +58,14 @@
 .background {
 	height: auto;
 	width: auto;
+	max-width: 1920px;
 }
 
 .main_carousel {
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
 }
 
-.tint {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	max-width: 1800px;
-	background-color: #100E1D;
-	opacity: 20%;
-	z-index: 2;
-}
 
 .quick-info {
 	height: 400px;
@@ -83,6 +78,7 @@
 .allign-horizontal {
 	display: flex;
 	flex-direction: row;
+	margin-top: 40px;
 }
 
 .icon {
@@ -149,11 +145,47 @@
 #map {
 	width: 100%;
 	height: 600px;
-	z-index: 3;
+	background: transparent;
 }
 
 .padding {
 	width: 100%;
 	height: 300px;
 	background-color: #101010;
+}
+
+
+/* || 3D MODEL + TEXT */
+
+
+.detailed-presentation {
+	height: 800px;
+	display: flex;
+	flex-direction: row;
+}
+
+.terrain-model {
+	display: flex;
+	flex-direction: row;
+}
+
+#model {
+	width: 900px;
+	height: 700px;
+	margin-left: 200px;
+}
+
+.text {
+	margin-left: 130px;
+	margin-top: 175px;
+	width: 410px;
+	height: 200px;
+}
+
+.text p {
+	font-size: 20px;
+	color: #FFFFFF;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	font-weight: lighter;
+	margin-top: 30px;
 }

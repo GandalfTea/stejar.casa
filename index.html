@@ -8,8 +8,9 @@
 		<meta charset='UTF-8'/>
 		<link rel='stylesheet' href='index.css'>
 
-		<script src='map.js'></script>
-		
+		<script src='./js/map.js'></script>
+		<script type="module" src='./js/model.js'></script>
+
 
 	</head>
 	<body>
@@ -21,12 +22,13 @@
 					<p id='welcome_location'>Iasi, Romania</p>
 				</div>
 				<div class='background'>
-					<div class='tint'></div>
-					<img src='./meta/carousel_1.jpg'
+					<img src='./meta/carousel_1_darker.jpg'
 						alt="Photo of the house"
 						class='main_carousel'/>
 				</div>
 			</div>
+
+			<!-- Location, Sizes and Phone Number -->
 			<div class='quick-info'>
 				<div class='allign-horizontal'>
 					<div class='address'>
@@ -76,11 +78,31 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Google Maps API -->
 			<div id='map'>
 				<script
 					src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAVCKe-L9YZh4Fspfpvv7jSrmsa2Ope_Jo&callback=initMap&libraries=&v=weekly'
 					async
 				></script>
+			</div>
+
+			<div class='padding'></div>
+
+			<!-- Presenting the house structure in detail -->
+			<div class='detailed-presentation'>
+				<div class='terrain-model'>
+					<canvas id='model'></canvas>
+					<div class='text'>
+						<p>Terenul este pozitionat langa padure, la 8 minute de aeroport, de centru si de Palas
+						<p>Casa din fata vine cu un teren de 234 m<sup>2</sup><p>
+						<p>Casa din vale vine cu un teren de 424 m<sup>2</sup></p>
+						<p>Accesul este direct, din strada <i>Stejar</i>.
+						Ambele case includ 2 locuri de parcare, cu numar cadastral separat.
+						Terenul de acces va fi in coproprietate. </p>
+
+					</div>
+				</div>
 			</div>
 			<div class='padding'></div>
 		</div >
