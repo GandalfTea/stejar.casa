@@ -1,0 +1,22 @@
+{
+  "name": "stejar.casa",
+  "version": "1.0.0",
+  "description": "yes",
+  "main": "none",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GandalfTea/stejar.casa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GandalfTea/stejar.casa/issues"
+  },
+  "homepage": "https://github.com/GandalfTea/stejar.casa#readme",
+  "dependencies": {
+    "three": "^0.129.0"
+  }
+}
