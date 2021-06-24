@@ -1,6 +1,10 @@
 import * as THREE from "../node_modules/three/build/three.module.js"
+//import * as THREE from 'https://unpkg.com/three@0.129.0/build/three.js'
 
 import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/OBJLoader.js';
+//import { OBJLoader } from 'https://unpkg.com/three@0.129.0/examples/jsm/loaders/OBJLoader.js'
+
+
 
 
 let camera, scene, renderer;
@@ -15,10 +19,7 @@ function init() {
 
 		    scene = new THREE.Scene();
 
-		    geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-		    material = new THREE.MeshNormalMaterial();
-
-			const loader = new THREE.OBJLoader();
+			const loader = new OBJLoader();
 			loader.load('./meta/3dmodel/teren.obj',
 						function(object) {
 							scene.add(object);
@@ -30,8 +31,11 @@ function init() {
 							console.log('An error has occured');
 						});
 
-		    //mesh = new THREE.Mesh( geometry, material );
-		    //scene.add( mesh );
+			const color = 0xFFFFFF;
+			const intensity = 1;
+			const light = new THREE.AmbientLight(color, intensity);
+			scene.add(light);
+
 
 		    renderer = new THREE.WebGLRenderer( { canvas: document.getElementById("model")});
 		    renderer.setSize(700, 700);
