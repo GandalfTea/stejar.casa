@@ -2,52 +2,75 @@ import * as THREE from "../node_modules/three/build/three.module.js"
 //import * as THREE from 'https://unpkg.com/three@0.129.0/build/three.js'
 
 import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/OBJLoader.js';
+import { MTLLoader } from '../node_modules/three/examples/jsm/loaders/MTLLoader.js';
+
+import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
 //import { OBJLoader } from 'https://unpkg.com/three@0.129.0/examples/jsm/loaders/OBJLoader.js'
 
 
 
-
 let camera, scene, renderer;
-let geometry, material, mesh;
 
-init();
+camera = new THREE.PerspectiveCamera( 70, 1.8, 0.01, 1000 );
 
-function init() {
+scene = new THREE.Scene();
 
-		    camera = new THREE.PerspectiveCamera( 70, 1, 0.01, 10 );
-		    camera.position.z = 1;
+var normal_material = new THREE.MeshBasicMaterial( {color: 0xFFFFFF} );
 
-		    scene = new THREE.Scene();
+// the model
+const loader = new OBJLoader();
+const material_loader = new MTLLoader();
 
-			const loader = new OBJLoader();
-			loader.load('./meta/3dmodel/teren.obj',
-						function(object) {
-							scene.add(object);
-						},
-						function(xhr){
-							console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-						},
-						function(error) {
-							console.log('An error has occured');
-						});
+material_loader.load('./meta/3dmodel/teren.mtl', function(materialCreator) {
+		loader.setMaterials(materialCreator);
+		loader.load('./meta/3dmodel/teren.obj',
+				function(model) {
+					var box = new THREE.Box3().setFromObject( model )
+					var center = new THREE.Vector3();
+					box.getCenter( center );
+					model.position.sub( center );
 
-			const color = 0xFFFFFF;
-			const intensity = 1;
-			const light = new THREE.AmbientLight(color, intensity);
-			scene.add(light);
+					scene.add(model);
+				},
+				function(xhr){
+					console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+				},
+				function(error) {
+					console.log('An error has occured:' + error.message);
+				});
+})
 
 
-		    renderer = new THREE.WebGLRenderer( { canvas: document.getElementById("model")});
-		    renderer.setSize(700, 700);
-		    renderer.setAnimationLoop( animation );
+// Light
+var ambient = new THREE.AmbientLight( 0xFFFFFF );
+scene.add( ambient );
 
-}
+var directionalLight = new THREE.DirectionalLight( 0x444444 );
+directionalLight.position.set( 1, 0, 0 ).normalize();
+scene.add( directionalLight );
 
-function animation( time ) {
+// Debu Cube
+const geometry = new THREE.BoxGeometry();
+const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+//scene.add( cube );
 
-		    //mesh.rotation.x = time / 2000;
-		    //mesh.rotation.y = time / 1000;
 
-		    renderer.render( scene, camera );
+renderer = new THREE.WebGLRenderer( { canvas: document.getElementById("model"), alpha: true});
+renderer.setSize(1000, 600);
 
-}
+const controls = new OrbitControls( camera, renderer.domElement );
+camera.position.z = 60;
+
+
+function animate() {		
+	requestAnimationFrame(animate);
+
+	cube.rotation.x += 0.01;
+	cube.rotation.y += 0.01;
+
+	controls.update();
+	renderer.render( scene, camera );
+};
+
+animate();
