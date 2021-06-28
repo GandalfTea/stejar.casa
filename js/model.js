@@ -10,6 +10,7 @@ import { OrbitControls } from '../node_modules/three/examples/jsm/controls/Orbit
 
 
 let camera, scene, renderer;
+var Model;
 
 camera = new THREE.PerspectiveCamera( 70, 1.8, 0.01, 1000 );
 
@@ -30,7 +31,9 @@ material_loader.load('./meta/3dmodel/teren.mtl', function(materialCreator) {
 					box.getCenter( center );
 					model.position.sub( center );
 
-					scene.add(model);
+					Model = model;
+
+					scene.add(Model);
 				},
 				function(xhr){
 					console.log((xhr.loaded / xhr.total * 100) + '% loaded');
@@ -42,32 +45,31 @@ material_loader.load('./meta/3dmodel/teren.mtl', function(materialCreator) {
 
 
 // Light
-var ambient = new THREE.AmbientLight( 0xFFFFFF );
+var ambient = new THREE.AmbientLight( 0x909090 );
 scene.add( ambient );
 
-var directionalLight = new THREE.DirectionalLight( 0x444444 );
-directionalLight.position.set( 1, 0, 0 ).normalize();
-scene.add( directionalLight );
+//var directionalLight = new THREE.DirectionalLight( 0x444444 );
+//directionalLight.position.set( 1, 0, 0 ).normalize();
+//scene.add( directionalLight );
 
 // Debu Cube
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
+//const geometry = new THREE.BoxGeometry();
+//const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+//const cube = new THREE.Mesh( geometry, material );
 //scene.add( cube );
 
 
 renderer = new THREE.WebGLRenderer( { canvas: document.getElementById("model"), alpha: true});
-renderer.setSize(1000, 600);
+renderer.setSize(1200, 600);
 
 const controls = new OrbitControls( camera, renderer.domElement );
-camera.position.z = 60;
+camera.position.x = -15;
+camera.position.y = 15;
+camera.position.z = -20;
 
 
 function animate() {		
-	requestAnimationFrame(animate);
-
-	cube.rotation.x += 0.01;
-	cube.rotation.y += 0.01;
+	requestAnimationFrame(animate);	
 
 	controls.update();
 	renderer.render( scene, camera );
