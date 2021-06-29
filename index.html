@@ -7,9 +7,11 @@
 		<title>Duplex</title>
 		<meta charset='UTF-8'/>
 		<link rel='stylesheet' href='index.css'>
-
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src='./js/map.js'></script>
 		<script type="module" src='./js/model.js'></script>
+		<script src='./js/transition.js'></script>
 
 
 	</head>
@@ -27,9 +29,10 @@
 						alt="Photo of the house"
 						class='main_carousel'/>
 
-					<video autoplay muted class='intro-video'>
-							<source src='./meta/video.mp4' type='video/mp4'>
-							Your browser does not support the video tag.
+					<video autoplay muted class='intro-video'
+							poster:'./meta/carousel_1_darker.jpg'>
+							<source src='./meta/videos/video.mp4' type='video/mp4'>
+							<p>Your browser does not support the video tag.</p>
 					</video>
 				</div>
 			</div>
@@ -113,6 +116,32 @@
 				</div>
 			</div>
 			<div class='padding'></div>
+
+
+			<!-- Interior Presentation -->
+
+			<div class='brakedown'>
+				<div class='text'>
+					<p>This is where the text is.</p>
+				</div>
+				<video controls>
+					<source src='./meta/videos/top-brakedown.mp4' type:'video/mp4'>
+					<p>Your browser does not support the video tag.</p>
+				</video>
+			</div>
+			
+			<div class='padding'></div>
+
+			<div class='brakedown'>
+				<video controls>
+					<source src='./meta/videos/fundatie-side-brakedown.mp4' type:'video.mp4'>
+					<p>Your browser does not support the video tag.</p>
+				</video>
+				<div class='text'>
+					<p> This is second text.</p>
+				</div>
+			</div>
+
 		</div >
 	</body>
 </html>
