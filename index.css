@@ -73,7 +73,7 @@ body{
 	height: 400px;
 }
 
-.intro-video {
+#intro-video {
 	width: 100%;
 	height: 100%;
 	left: 10px;
@@ -166,19 +166,31 @@ body{
 
 
 .detailed-presentation {
-	height: 800px;
+	height: 600px;
 	display: flex;
 	flex-direction: row;
 }
 
 .terrain-model {
+	position: relative;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
 
 #model {
-	width: 1200px;
+	width: 100%;
 	height: 600px;
+}
+
+.see-through {
+	position: absolute;
+	height: 100%;
+	width: 500px;
+	right: 0px;
+	background-color: #101010;
+	opacity: 70%;
+	z-index: 1;
 }
 
 .text {
@@ -186,6 +198,15 @@ body{
 	margin-top: 175px;
 	width: 410px;
 	height: 200px;
+}
+
+.terrain-model .text {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	margin-top: 130px;
+	opacity: 100%;
+	z-index: 2;
 }
 
 .text p {
@@ -204,4 +225,12 @@ body{
 	display: flex;
 	flex-direction: row;
 	margin: auto;
+}
+
+.brakedown video {
+	width: 1100px;
+}
+
+.brakedown text {
+	position: relative;
 }

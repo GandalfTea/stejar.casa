@@ -12,6 +12,7 @@
 		<script src='./js/map.js'></script>
 		<script type="module" src='./js/model.js'></script>
 		<script src='./js/transition.js'></script>
+		<script src='./js/video-scroll.js'></script>
 
 
 	</head>
@@ -29,7 +30,7 @@
 						alt="Photo of the house"
 						class='main_carousel'/>
 
-					<video autoplay muted class='intro-video'
+					<video autoplay muted id='intro-video' onclick='onClickDo()'
 							poster:'./meta/carousel_1_darker.jpg'>
 							<source src='./meta/videos/video.mp4' type='video/mp4'>
 							<p>Your browser does not support the video tag.</p>
@@ -104,6 +105,7 @@
 			<div class='detailed-presentation'>
 				<div class='terrain-model'>
 					<canvas id='model'></canvas>
+					<div class='see-through'></div>
 					<div class='text'>
 						<p>Terenul este pozitionat langa padure, la 8 minute de aeroport, de centru si de Palas
 						<p>Casa din fata vine cu un teren de 234 m<sup>2</sup><p>
@@ -124,8 +126,8 @@
 				<div class='text'>
 					<p>This is where the text is.</p>
 				</div>
-				<video controls>
-					<source src='./meta/videos/top-brakedown.mp4' type:'video/mp4'>
+				<video id='brakedown-1'>
+					<source src='./meta/videos/top-brakedown.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
 			</div>
@@ -141,6 +143,8 @@
 					<p> This is second text.</p>
 				</div>
 			</div>
+
+			<div class='padding'></div>
 
 		</div >
 	</body>
