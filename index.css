@@ -226,3 +226,99 @@ body{
 .brakedown text {
 	position: relative;
 }
+
+
+/* || Contact Form */
+
+
+.contact-form {
+	height: auto;
+	width: 700px;
+	margin: auto;
+}
+
+.contact-form p {
+	margin-bottom: 20px;
+}
+
+.contact-form label{
+	font-size: 20px;
+	color: #FFFFFF;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	font-weight: lighter;
+	margin-left: 20px;
+}
+
+.contact-form textarea {
+	resize: none;
+	height: 300px;
+	width: 700px;
+	background-color: #303030;
+	border: 0;
+	border-radius: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+
+	outline: none;
+	color: #cccccc; 
+	padding: 20px;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	font-weight: lighter;
+}
+
+.contact-form textarea:focus {
+	color: #FFFFFF;
+}
+
+.contact-form input {
+	font-size: 15px;
+	height: 30px;
+	width: 250px;
+	background-color: #303030;
+	border: 0;
+	border-radius: 7px;
+	margin-left: 20px;
+
+	outline: none;
+	padding: 7px;
+	padding-left: 15px;
+	color: #cccccc; 
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	font-weight: lighter;
+}
+
+.contact-form input:focus {
+	color: #FFFFFF; 
+}
+
+.contact-form button {
+	height: 35px;
+	width: 80px;
+	margin-left: 600px;
+	margin-top: 20px;
+	color: #FFFFFF;
+	background-color: #404040;
+	border-radius: 20px;
+	border: none;
+	color: #FFFFFF; 
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+.contact-form button:hover {
+	background-color: #606060;
+}
+
+.contact-form button:active {
+	background-color: #404040;
+}
+
+
+/* || Footer */
+
+.footer {
+	height: 200px;
+	background-color: #202020;
+	margin-top: 200px;
+}

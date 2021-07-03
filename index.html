@@ -87,7 +87,7 @@
 			<div class='padding'></div>
 
 
-			<!-- Presenting the house structure in detail -->
+			<!-- House Model and Terrain Description -->
 			<div class='detailed-presentation'>
 				<div class='terrain-model'>
 					<canvas id='model'></canvas>
@@ -112,7 +112,7 @@
 				<div class='text'>
 					<p>This is where the text is.</p>
 				</div>
-				<video controls preload autobuffer id='brakedown-1'>
+				<video muted autoplay loop id='brakedown-1'>
 					<source src='./meta/videos/top-brakedown.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
@@ -131,6 +131,27 @@
 			</div>
 
 			<div class='padding'></div>
+
+			<!-- Contact Form -->
+			<div class='contact-form'>	
+				<form name='contact' method='POST' data-netlify='true'>
+					<p>
+						<input type='email' name='email' placeholder='exemplu@mail.com'/></label>
+					</p>
+					<p>
+						<textarea name='message' placeholder='Salut, sunt interesat de casa. Ai loc de gratar?'></textarea>
+					</p>
+					<p>
+						<button type='submit'>Send</button>
+					</p>
+				</form>
+			</div>
+
+
+			<!-- Footer -->
+
+			<div class='padding footer'>
+			</div>
 
 		</div >
 	</body>
