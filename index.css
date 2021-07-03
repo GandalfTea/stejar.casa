@@ -27,6 +27,23 @@ body{
 	background-color: #101010;
 }
 
+
+.padding {
+	width: 100%;
+	height: 300px;
+	background-color: #101010;
+}
+
+
+
+.test {
+	position: absolute;
+	height: 1080px;
+	width: 1920px;
+	background-color: #101010;
+	z-index: 2;
+}
+
 /* || VIDEO CAROUSEL */
 
 .title {
@@ -36,7 +53,7 @@ body{
 	background-color: transparent;
 	position: absolute;
 	left: 50%;
-	top: 52%;
+	top: 45%;
 	transform: translate(-50%, 0);
 	font-weight: lighter;
 	z-index: 3;
@@ -44,15 +61,20 @@ body{
 
 .title p strong {
 	background-color: transparent;
+	font-weight: lighter;
 	font-size: 30px;
-	letter-spacing: 4px;
+	letter-spacing: 5px;
 }
 
 .title p {
 	background-color: transparent;
 	color: #FFFFFF;
 	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	margin-top: 5px;
+	margin-top: 10px;
+}
+
+#welcome_location {
+	margin-top: 3px;
 }
 
 .background {
@@ -68,30 +90,40 @@ body{
 	position: absolute;
 }
 
-
-.quick-info {
-	height: 400px;
-}
-
 #intro-video {
 	width: 100%;
 	height: 100%;
 	left: 10px;
 }
 
+
+
 /* HOUSE QUICK INFO */
+
+.quick-info {
+	height: 400px;
+}
 
 
 .allign-horizontal {
 	display: flex;
-	flex-direction: row;
-	margin-top: 40px;
+	flex-direction: column;
+	margin-top: 100px;
+	margin-left: 43%;
+}
+
+.allign-horizontal p {
+	color: #FFFFFF;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	font-weight: lighter;
 }
 
 .icon {
 	height: auto;
 	width: 13px;
 	object-fit: contain;
+	margin-right: 14px;
+	margin-left: 3px;
 }
 
 .icon-small {
@@ -101,49 +133,15 @@ body{
 	margin-right: 10px;
 }
 
-.allign-horizontal p {
-	color: #FFFFFF;
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: lighter;
-	margin-left: 5px;
-}
-
-.address {
-	margin-left: 23%;
-	margin-top: 120px;
-}
-
-.location {
+.detail {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 20px;
-}
-.location img {
-	margin-right: 10px;
-}
-
-
-
-.teren-casa {
-	display: flex;
-	flex-direction: row;
+	margin-left: 3px;
 	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
-.detalii-casa {
-	display: flex;
-	flex-direction: row;
-}
-
-
-.casa {
-	margin-left: 200px;
-	margin-top: 80px;
-}
-
-.this-little-guy-is-annoying {
-	margin-top: 15px;
+#selling-point {
+	margin-top: 50px;
 }
 
 
@@ -153,12 +151,6 @@ body{
 	width: 100%;
 	height: 600px;
 	background: transparent;
-}
-
-.padding {
-	width: 100%;
-	height: 250px;
-	background-color: #101010;
 }
 
 

@@ -1,7 +1,8 @@
 window.setTimeout(
 	function() {
 		$('.main_carousel').fadeOut(1000);
-	}, 2500);
+	}, 25);
+	// 2500
 
 // Pause and Resume Intro video on Click
 
@@ -13,4 +14,10 @@ function onClickDo() {
 		document.getElementById('intro-video').play();
 	}
 }
+
+
+window.setTimeout(
+	function() {
+		$('.test').fadeOut(1500);
+	}, 2000)
 

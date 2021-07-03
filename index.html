@@ -26,11 +26,13 @@
 				</div>
 				<div class='background'>
 
+					<div class='test'></div>
+
 					<img src='./meta/carousel_1_darker.jpg'
 						alt="Photo of the house"
 						class='main_carousel'/>
 
-					<video autoplay muted id='intro-video' onclick='onClickDo()'
+					<video preload autoplay muted id='intro-video' onclick='onClickDo()'
 							poster:'./meta/carousel_1_darker.jpg'>
 							<source src='./meta/videos/video.mp4' type='video/mp4'>
 							<p>Your browser does not support the video tag.</p>
@@ -41,51 +43,35 @@
 			<!-- Location, Sizes and Phone Number -->
 			<div class='quick-info'>
 				<div class='allign-horizontal'>
-					<div class='address'>
-						<div class='location'>
-							<img src='./meta/icons/location.png'
-								 alt='Location'
-								 class='icon'/>
-							<p>Stejar 103, Ia&#351;i, Rom&#226;nia, 700333</p>
-						</div>
-						<p>8 de minute p&#226;n&#259; &#238;n centru sau Palas</p>
+					<div class='detail'>
+						<img src='./meta/icons/location.png'
+							 alt='Location'
+							 class='icon'/>
+						<p>Stejar 103, Ia&#351;i, Rom&#226;nia, 700333</p>
 					</div>
-					<div class='casa'>
-						<p><strong>Corp Strada</strong></p>
-						<div class='teren-casa'>
-							<img src='./meta/icons/terrain.png'
-								 alt='Terrain'
-								 class='icon-small'/>
-							<p>240m<sup>2</sup></p>
-						</div>
-						<div class='detalii-casa'>
-							<img src='./meta/icons/home.png'
-								 alt='Home'
-								 class='icon-small'/>
-							<div class='detalii-cs'>
-								<p>120m<sup>2</sup></p>
-							</div>
-						</div>
-						<p class='this-little-guy-is-annoying'>De inchiriat</p>
+					<div class='detail'>
+						<img src='./meta/icons/terrain.png'
+							 alt='Terrain'
+							 class='icon-small'/>
+						<p>664m<sup>2</sup></p>
 					</div>
-					<div class='casa'>
-						<p><strong>Corp Vale</strong></p>
-						<div class='teren-casa'>
-							<img src='./meta/icons/terrain.png'
-								 alt='Terrain'
-								 class='icon-small'/>
-							<p>424m<sup>2</sup></p>
+					<div class='detail'>
+						<img src='./meta/icons/home.png'
+							 alt='Home'
+							 class='icon-small'/>
+						<div class='detalii-cs'>
+							<p>130m<sup>2</sup></p>
 						</div>
-						<div class='detalii-casa'>
-							<img src='./meta/icons/home.png'
-								 alt='Home'
-								 class='icon-small'/>
-							<div class='detalii-cs'>
-								<p>130m<sup>2</sup></p>
-							</div>
-						</div>
-						<p class='this-little-guy-is-annoying'>De vanzare</p>
 					</div>
+					<div class='detail'>
+						<img src='./meta/icons/phone.png'
+							 alt='Phone Number'
+							 class='icon-small'/>
+						<div>
+							<p>0751232111</p>
+						</div>
+					</div>
+					<p id='selling-point'>8 de minute p&#226;n&#259; &#238;n centru sau Palas</p>
 				</div>
 			</div>
 
@@ -126,7 +112,7 @@
 				<div class='text'>
 					<p>This is where the text is.</p>
 				</div>
-				<video id='brakedown-1'>
+				<video controls preload autobuffer id='brakedown-1'>
 					<source src='./meta/videos/top-brakedown.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
@@ -136,7 +122,7 @@
 
 			<div class='brakedown'>
 				<video controls>
-					<source src='./meta/videos/fundatie-side-brakedown.mp4' type:'video.mp4'>
+					<source src='./meta/videos/side-brakedown.mp4' type:'video.mp4'>
 					<p>Your browser does not support the video tag.</p>
 				</video>
 				<div class='text'>
