@@ -63,8 +63,9 @@ renderer = new THREE.WebGLRenderer( { canvas: document.getElementById("model"), 
 renderer.setSize(document.getElementById('model').clientWidth, document.getElementById('model').clientHeight);
 
 const controls = new OrbitControls( camera, renderer.domElement );
+controls.autoRotate = true;
 camera.position.x = -20;
-camera.position.y = 15;
+camera.position.y = 10;
 camera.position.z = -15;
 
 

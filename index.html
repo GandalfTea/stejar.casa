@@ -7,6 +7,10 @@
 		<title>Duplex</title>
 		<meta charset='UTF-8'/>
 		<link rel='stylesheet' href='index.css'>
+
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+		</style>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src='./js/map.js'></script>
@@ -53,7 +57,7 @@
 						<img src='./meta/icons/terrain.png'
 							 alt='Terrain'
 							 class='icon-small'/>
-						<p>664m<sup>2</sup></p>
+						<p>424m<sup>2</sup></p>
 					</div>
 					<div class='detail'>
 						<img src='./meta/icons/home.png'
@@ -94,10 +98,10 @@
 					<div class='see-through'></div>
 					<div class='text'>
 						<p>Terenul este pozitionat langa padure, la 8 minute de aeroport, de centru si de Palas
-						<p>Casa din fata vine cu un teren de 234 m<sup>2</sup><p>
-						<p>Casa din vale vine cu un teren de 424 m<sup>2</sup></p>
+						<p>Corpul 1  strada este pentru inchiriat<p>
+						<p>Corpul 2 este pentru vanzare</p>
 						<p>Accesul este direct, din strada <i>Stejar</i>.
-						Ambele case includ 2 locuri de parcare, cu numar cadastral separat.
+						Ambele case includ cate 2 locuri de parcare, cu numar cadastral separat.
 						Terenul de acces va fi in coproprietate. </p>
 
 					</div>
@@ -113,7 +117,7 @@
 					<p>This is where the text is.</p>
 				</div>
 				<video muted autoplay loop id='brakedown-1'>
-					<source src='./meta/videos/top-brakedown.mp4' type:'video/mp4' >
+					<source src='./meta/videos/side-brakedown.mp4' type:'video.mp4'>
 					<p>Your browser does not support the video tag.</p>
 				</video>
 			</div>
@@ -122,7 +126,7 @@
 
 			<div class='brakedown'>
 				<video controls>
-					<source src='./meta/videos/side-brakedown.mp4' type:'video.mp4'>
+					<source src='./meta/videos/top-brakedown.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
 				<div class='text'>
@@ -132,14 +136,52 @@
 
 			<div class='padding'></div>
 
+
+			<!-- Construction and Documents Links -->
+
+			<div class='local-links'>
+				<img src='./meta/construction.jpg' id='construction-img'/>
+				<div class='construction'>
+					<p>Constructie</p>
+				</div>
+				<img src='./meta/construction.jpg' id='construction-img'/>
+				<div class='documents'>
+					<p>Documente</p>
+				</div>
+			</div>
+
+			<div class='padding'></div>
+
+
 			<!-- Contact Form -->
+
 			<div class='contact-form'>	
+
+				<p id='contact'>Contact</p>
+
+				<div class='detail contact-phone'>
+					<img src='./meta/icons/phone.png'
+						 alt='Phone Number'
+						 class='icon-small'/>
+					<div>
+						<p id='number'>(+40) 751 232 111</p>
+					</div>
+				</div>
+
+				<div class='detail contact-email'>
+					<img src='./meta/icons/email.png'
+						 class='icon-small'/>
+					<div>
+						<p id='email'>rusugiovani@gmail.com</p>
+					</div>
+				</div>
+
 				<form name='contact' method='POST' data-netlify='true'>
 					<p>
-						<input type='email' name='email' placeholder='exemplu@mail.com'/></label>
+						<input type='email' name='email' placeholder='Email'/></label>
 					</p>
 					<p>
-						<textarea name='message' placeholder='Salut, sunt interesat de casa. Ai loc de gratar?'></textarea>
+						<textarea name='message' placeholder='Salut, imi place casa. Eu si baietii vroiam sa venim la un gratar la ea, ca test. Cand este disponibila?'></textarea>
 					</p>
 					<p>
 						<button type='submit'>Send</button>
