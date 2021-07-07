@@ -64,6 +64,8 @@ renderer.setSize(document.getElementById('model').clientWidth, document.getEleme
 
 const controls = new OrbitControls( camera, renderer.domElement );
 controls.autoRotate = true;
+controls.autoRotateSpeed = 4;
+
 camera.position.x = -20;
 camera.position.y = 18;
 camera.position.z = -15;
