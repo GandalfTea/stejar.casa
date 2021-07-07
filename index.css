@@ -278,14 +278,14 @@ body{
 	opacity: 40%;
 }
 .construction:hover p {
-	opacity: 0%;
+	display: none;
 }
 
 .documents:hover {
 	opacity: 40%;
 }
 .documents:hover p {
-	opacity: 0%;
+	display: none;
 }
 
 
