@@ -1,8 +1,3 @@
-window.setTimeout(
-	function() {
-		$('.main_carousel').fadeOut(1000);
-	}, 25);
-	// 2500
 
 // Pause and Resume Intro video on Click
 
@@ -16,8 +11,15 @@ function onClickDo() {
 }
 
 
+// Fade In Transition
+
+console.log('scroll disabled');
+
 window.setTimeout(
 	function() {
 		$('.test').fadeOut(1500);
 	}, 2000)
+
+
+//  Disable scroll for the period of transition
 

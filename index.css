@@ -44,7 +44,7 @@ body{
 
 .test {
 	position: absolute;
-	height: 1080px;
+	height: 3000px;
 	width: 1920px;
 	background-color: #101010;
 	z-index: 2;
@@ -98,8 +98,9 @@ body{
 
 #intro-video {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	left: 10px;
+	object-fit: cover;
 }
 
 
