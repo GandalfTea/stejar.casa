@@ -7,7 +7,7 @@
 		<title>Duplex</title>
 		<meta charset='UTF-8'/>
 		<link rel='stylesheet' href='./styles/general.css'>
-		<link rel='stylesheet' href='./styles/landing_page.css'>
+		<link rel='stylesheet' href='./styles/landing.css'>
 
 		<style>
 		@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -16,7 +16,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src='./js/map.js'></script>
 		<script type="module" src='./js/model.js'></script>
-		<script src='./js/transition.js'></script>
 
 
 	</head>
@@ -32,22 +31,26 @@
 
 					<div class='test'></div>
 
-					<video preload autoplay muted id='intro-video' onclick='onClickDo()'
+					<video preload autoplay muted loop id='intro-video' onclick='onClickDo()'
 							poster:'./meta/carousel_1_darker.jpg'>
 							<source src='./meta/videos/video-small.mp4' type='video/mp4'>
 							<p>Your browser does not support the video tag.</p>
 					</video>
 				</div>
 			</div>
+			
+			<script src='./js/transition.js'></script>
 
 			<!-- Location, Sizes and Phone Number -->
 			<div class='quick-info'>
 				<div class='allign-horizontal'>
-					<div class='detail'>
+						<p id='info-sentance'>Cladire de tip duplex cu acces din strada Stejar (zona Ion Creanga). Poate fi folosite in scop rezidential sau variate scopuri private, precum cabinet medical, sediu de firma, etc.</p>
+					<p id='selling-point'>8 minute pana la aeroportul international, centru sau Palas</p>
+					<div class='detail detail-first'>
 						<img src='./meta/icons/location.png'
 							 alt='Location'
 							 class='icon'/>
-						<p>Stejar 103, Ia&#351;i, Rom&#226;nia, 700333</p>
+						<p>Stejar 103, Iasi, Rom&#226;nia</p>
 					</div>
 					<div class='detail'>
 						<img src='./meta/icons/terrain.png'
@@ -71,37 +74,26 @@
 							<p>0751232111</p>
 						</div>
 					</div>
-					<p id='selling-point'>8 minute p&#226;n&#259; la aeroportul international, centru sau Palas</p>
 				</div>
 			</div>
 
 
-			<!-- Google Maps API -->
-			<div id='map'>
-				<script
-					src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAVCKe-L9YZh4Fspfpvv7jSrmsa2Ope_Jo&callback=initMap&libraries=&v=weekly'
-					async
-				></script>
-			</div>
-
-			<div class='padding'></div>
-
-
 			<!-- House Model and Terrain Description -->
+			
 			<div class='detailed-presentation'>
 				<div class='terrain-model'>
 					<canvas id='model'></canvas>
 					<div class='see-through'></div>
-					<div class='text'>
-						<p>Terenul este pozitionat langa padure, cu accesul direct, din strada <i>Stejar</i>.</p>
+					<div class='text model-text'>
+							<p>Terenul este pozitionat langa padure, cu acces rapid catre centrul orasului si aeroportul international Iasi, la 5 minute de parcul de agrement Ciric</p>
 						<p>Ambele case includ cate 2 locuri de parcare, cu numar cadastral separat.</p>
-						<p>Terenul de acces va fi in coproprietate.</p>
-						<p>Corpul cu acces direct la strada este proiectat pentru a putea fi folosit si ca spatiu comercial. Este de inchiriat.<p>
-						<p>Corpul 2 este destinat vanzarii.</p>
+						<p>Corpul cu acces la strada este destinat inchirierii, avand o suprafata de 125 m<sup>2</sup>. Vine cu un teren de 150 m<sup>2</sup>.</p>
+						<p>Corpul 2 este de vanzare, cu o suprafata de 130m<sup>2</sup>. Terenul este de 424m<sup>2</sup>. 
 
 					</div>
 				</div>
 			</div>
+
 			<div class='padding'></div>
 
 
@@ -148,7 +140,19 @@
 						<p>Baie cu Dus</p>
 						<p>Acces pe terasa</p>
 					</div>
+					<p>Toate nivelele au o suprafata utila de 38m<sup>2</sup></p>
 				</div>
+			</div>
+
+			<div class='padding'></div>
+
+
+			<!-- Google Maps API -->
+			<div id='map'>
+				<script
+					src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAVCKe-L9YZh4Fspfpvv7jSrmsa2Ope_Jo&callback=initMap&libraries=&v=weekly'
+					async
+				></script>
 			</div>
 
 			<div class='padding'></div>

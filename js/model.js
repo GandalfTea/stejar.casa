@@ -12,7 +12,9 @@ import { OrbitControls } from '../node_modules/three/examples/jsm/controls/Orbit
 let camera, scene, renderer;
 var Model;
 
-camera = new THREE.PerspectiveCamera( 45, 3, 0.01, 500 );
+let ar = document.getElementById('model').clientWidth / 800;
+
+camera = new THREE.PerspectiveCamera( 45, ar, 0.01, 500 );
 
 scene = new THREE.Scene();
 
@@ -66,7 +68,7 @@ const controls = new OrbitControls( camera, renderer.domElement );
 controls.autoRotate = true;
 controls.autoRotateSpeed = 4;
 
-camera.position.x = -20;
+camera.position.x = -30;
 camera.position.y = 18;
 camera.position.z = -15;
 
