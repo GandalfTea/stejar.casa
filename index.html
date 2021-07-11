@@ -22,6 +22,13 @@
 	<body>
 		<div class='max_page_width'>
 			<div class='video'>
+				<div class='top-menu'>
+					<a href='#teren' class='menu-button'>Teren</a>
+					<a href='#structura' class='menu-button'>Structura</a>
+					<a href='' class='menu-button'>Etape constructie</a>
+					<a href='' class='menu-button'>Documente</a>
+					<a href='' class='menu-button'>Contact</a>
+				</div>
 				<div class='title'>
 					<p id='welcome_name'><strong>Green Concept</strong></p>
 					<p id='welcome_type'>Duplex</p>
@@ -33,59 +40,52 @@
 
 					<video preload autoplay muted loop id='intro-video' onclick='onClickDo()'
 							poster:'./meta/carousel_1_darker.jpg'>
-							<source src='./meta/videos/video-small.mp4' type='video/mp4'>
+							<source src='./meta/videos/video_2.mp4' type='video/mp4'>
 							<p>Your browser does not support the video tag.</p>
 					</video>
 				</div>
 			</div>
 			
+
 			<script src='./js/transition.js'></script>
+
 
 			<!-- Location, Sizes and Phone Number -->
 			<div class='quick-info'>
-				<div class='allign-horizontal'>
-						<p id='info-sentance'>Cladire de tip duplex cu acces din strada Stejar (zona Ion Creanga). Poate fi folosite in scop rezidential sau variate scopuri private, precum cabinet medical, sediu de firma, etc.</p>
+				<div class='align-horizontal'>
+					<p id='info-sentance'>Cladire tip duplex cu acces din strada <i>Stejar</i>, zona Ion Creanga. Poate fi folosita in scop rezidential sau variate scopuri private, precum cabinet medical, sediu de firma, birou, etc. De inchiriat sau cumparat.</p>
 					<p id='selling-point'>8 minute pana la aeroportul international, centru sau Palas</p>
-					<div class='detail detail-first'>
-						<img src='./meta/icons/location.png'
-							 alt='Location'
-							 class='icon'/>
-						<p>Stejar 103, Iasi, Rom&#226;nia</p>
-					</div>
-					<div class='detail'>
-						<img src='./meta/icons/terrain.png'
-							 alt='Terrain'
-							 class='icon-small'/>
-						<p>424m<sup>2</sup></p>
-					</div>
-					<div class='detail'>
-						<img src='./meta/icons/home.png'
-							 alt='Home'
-							 class='icon-small'/>
-						<div class='detalii-cs'>
-							<p>130m<sup>2</sup></p>
-						</div>
-					</div>
-					<div class='detail'>
-						<img src='./meta/icons/phone.png'
-							 alt='Phone Number'
-							 class='icon-small'/>
-						<div>
-							<p>0751232111</p>
-						</div>
+					<div class='align-vertical'>
+							<div class='detail'>
+								<img src='./meta/icons/location.png'
+									 alt='Location'
+									 class='icon'/>
+								<p>Stejar 103, Iasi, Rom&#226;nia</p>
+							</div>
+							<div class='detail'>
+								<img src='./meta/icons/phone.png'
+									 alt='Phone Number'
+									 class='icon-small'/>
+								<div>
+									<p>(+40) 751 232 111</p>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
 
+			<a id='teren'>
+				<div class='padding-smaller'></div>
+			</a>
 
 			<!-- House Model and Terrain Description -->
-			
+
 			<div class='detailed-presentation'>
 				<div class='terrain-model'>
 					<canvas id='model'></canvas>
 					<div class='see-through'></div>
-					<div class='text model-text'>
-							<p>Terenul este pozitionat langa padure, cu acces rapid catre centrul orasului si aeroportul international Iasi, la 5 minute de parcul de agrement Ciric</p>
+					<div class='text'>
+						<p>Terenul este pozitionat langa padure, cu acces rapid catre centrul orasului si aeroportul international Iasi, la 5 minute de parcul de agrement Ciric</p>
 						<p>Ambele case includ cate 2 locuri de parcare, cu numar cadastral separat.</p>
 						<p>Corpul cu acces la strada este destinat inchirierii, avand o suprafata de 125 m<sup>2</sup>. Vine cu un teren de 150 m<sup>2</sup>.</p>
 						<p>Corpul 2 este de vanzare, cu o suprafata de 130m<sup>2</sup>. Terenul este de 424m<sup>2</sup>. 
@@ -94,10 +94,12 @@
 				</div>
 			</div>
 
-			<div class='padding'></div>
-
-
+			<a id='structura'>
+				<div class='padding'></div>
+			</a>
+			
 			<!-- Interior Presentation -->
+			
 
 			<div class='brakedown'>
 				<div class='text brakedown-text'>
@@ -105,7 +107,7 @@
 						<p> Au trei nivele: demisol, parter si etaj, cu o suprafata construita de 49m<sup>2</sup>. Terasa verde la ultimul nivel cu acces din interior, luminator cu deschidere completa, Fakro.</p>
 				</div>
 				<video muted autoplay loop id='brakedown-1'>
-					<source src='./meta/videos/side_lowbitrate.mp4' type:'video.mp4'>
+					<source src='./meta/videos/side-loop.mp4' type:'video.mp4'>
 					<p>Your browser does not support the video tag.</p>
 				</video>
 			</div>
@@ -113,7 +115,7 @@
 			<div class='padding'></div>
 
 			<div class='brakedown'>
-				<video muted autoplay loop>
+				<video muted autoplay loop id='brakedown-2'>
 					<source src='./meta/videos/top-loop.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
@@ -147,16 +149,6 @@
 			<div class='padding'></div>
 
 
-			<!-- Google Maps API -->
-			<div id='map'>
-				<script
-					src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAVCKe-L9YZh4Fspfpvv7jSrmsa2Ope_Jo&callback=initMap&libraries=&v=weekly'
-					async
-				></script>
-			</div>
-
-			<div class='padding'></div>
-
 
 			<!-- Construction and Documents Links -->
 
@@ -171,46 +163,66 @@
 				</div>
 			</div>
 
-			<div class='padding-smaller'></div>
+			<div class='padding'></div>
 
 
-			<!-- Contact Form -->
-
-			<div class='contact-form'>	
-
-				<p id='contact'>Contact</p>
-
-				<div class='detail contact-phone'>
-					<img src='./meta/icons/phone.png'
-						 alt='Phone Number'
-						 class='icon-small'/>
-					<div>
-						<p id='number'>(+40) 751 232 111</p>
+			<div class='contact-map'>
+					<!-- Google Maps API -->
+					<div id='map'>
+						<script
+							src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAVCKe-L9YZh4Fspfpvv7jSrmsa2Ope_Jo&callback=initMap&libraries=&v=weekly'
+							async
+						></script>
 					</div>
-				</div>
 
-				<div class='detail contact-email'>
-					<img src='./meta/icons/email.png'
-						 class='icon-small'/>
-					<div>
-						<p id='email'>rusugiovani@gmail.com</p>
+
+					<!-- Contact Form -->
+
+					<div class='see-through-contact'></div>
+					<div class='contact-form'>	
+
+						<p id='contact'>Contact</p>
+
+						<div class='detail contact-phone'>
+							<img src='./meta/icons/phone.png'
+								 alt='Phone Number'
+								 class='icon-small'/>
+							<div>
+								<p id='number'>(+40) 751 232 111</p>
+							</div>
+						</div>
+
+						<div class='detail contact-email'>
+							<img src='./meta/icons/email.png'
+								 class='icon-small'/>
+							<div>
+								<p id='email'>rusugiovani@gmail.com</p>
+							</div>
+						</div>
+						
+						<div class='detail contact-location'>
+							<img src='./meta/icons/location.png'
+								 alt='Location'
+								 class='icon'/>
+							<p id='form-location'>Stejar 103, Iasi, Rom&#226;nia</p>
+						</div>
+
+						<form name='contact' method='POST' data-netlify='true'>
+							<p>
+								<input type='email' name='email' placeholder='Email'/></label>
+							</p>
+							<p>
+								<textarea name='message' placeholder='Salut, imi place casa. Eu si baietii vrem sa venim la un gratar la ea, ca test. Cand este disponibila?'></textarea>
+							</p>
+							<p>
+								<button type='submit'>Send</button>
+							</p>
+						</form>
 					</div>
-				</div>
-
-				<form name='contact' method='POST' data-netlify='true'>
-					<p>
-						<input type='email' name='email' placeholder='Email'/></label>
-					</p>
-					<p>
-						<textarea name='message' placeholder='Salut, imi place casa. Eu si baietii vrem sa venim la un gratar la ea, ca test. Cand este disponibila?'></textarea>
-					</p>
-					<p>
-						<button type='submit'>Send</button>
-					</p>
-				</form>
 			</div>
 
 
+			<div class='padding-smaller'></div>
 			<!-- Footer -->
 
 			<div class='padding footer'>
