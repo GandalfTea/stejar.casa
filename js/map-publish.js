@@ -1,10 +1,15 @@
 
 function initMap() {
+	const center = { lat: 47.161138935905306, lng: 27.629613038068463 };
 	const house = {   lat: 47.161516589284986, lng: 27.61824894224047 };
 	const map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 15,
-		center: house,
-		mapId: ' no key in published version '
+		zoom: 14,
+		center: center,
+		disableDefaultUI: true,
+		mapId: 'no key in public repo',
+		options: {
+			gestureHandling: 'greedy'
+		}
 	});
 
 
@@ -14,7 +19,6 @@ function initMap() {
 	const marker = new google.maps.Marker({
 		position: house,
 		map: map,
-		disableDefaultUI: true,
 		icon: markerIcon,
 	});
 

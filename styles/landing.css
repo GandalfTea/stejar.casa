@@ -10,6 +10,14 @@
 }
 
 
+.text {
+	margin-left: 130px;
+	margin-top: 175px;
+	width: 410px;
+	height: 200px;
+	text-align: justify;
+}
+
 /* || VIDEO CAROUSEL */
 
 /* Menu */
@@ -235,14 +243,6 @@
 	z-index: 1;
 }
 
-.text {
-	margin-left: 130px;
-	margin-top: 175px;
-	width: 410px;
-	height: 200px;
-	text-align: justify;
-}
-
 .terrain-model .text {
 	position: absolute;
 	top: 0px;
@@ -360,16 +360,20 @@
 
 .construction:hover {
 	opacity: 40%;
+	transition: 0.2s 0s;
 }
 .construction:hover p {
 	display: none;
+	transition: 0.2s 0s;
 }
 
 .documents:hover {
 	opacity: 40%;
+	transition: 0.2s 0s;
 }
 .documents:hover p {
 	display: none;
+	transition: 0.2s 0s;
 }
 
 #construction-img {
