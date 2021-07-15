@@ -10,14 +10,14 @@ window.setTimeout(
 // FUNCTIONS CALLED IN HTML
 
 
-// Pause and Resume Intro video on Click
+// Pause and Resume all videos on Click
 
-function onClickDo() {
-	if(!document.getElementById('intro-video').paused) {
-		document.getElementById('intro-video').pause();
+function onClickDo(clickedId) {
+	if(!document.getElementById(clickedId).paused) {
+		document.getElementById(clickedId).pause();
 	}
-	else if(document.getElementById('intro-video').paused) {
-		document.getElementById('intro-video').play();
+	else if(document.getElementById(clickedId).paused) {
+		document.getElementById(clickedId).play();
 	}
 }
 

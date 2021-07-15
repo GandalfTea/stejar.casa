@@ -25,8 +25,8 @@
 				<div class='top-menu'>
 					<a href='#teren' class='menu-button'>Teren</a>
 					<a href='#structura' class='menu-button'>Structura</a>
-					<a href='constructie.html' class='menu-button'>Etape constructie</a>
-					<a href='' class='menu-button'>Documente</a>
+					<a href='constructie.html' class='menu-button'>Constructie</a>
+					<a href='' class='menu-button'>Poze</a>
 					<a href='' class='menu-button'>Contact</a>
 				</div>
 				<div class='title'>
@@ -38,7 +38,7 @@
 
 					<div class='test'></div>
 
-					<video preload autoplay muted loop id='intro-video' onclick='onClickDo()'
+					<video preload autoplay muted loop id='intro-video' onclick='onClickDo(this.id)'
 							poster:'./meta/carousel_1_darker.jpg'>
 							<source src='./meta/videos/video_2.mp4' type='video/mp4'>
 							<p>Your browser does not support the video tag.</p>
@@ -107,7 +107,7 @@
 						<p> Au trei nivele: demisol, parter si etaj, cu o suprafata construita de 49m<sup>2</sup>. Terasa verde la ultimul nivel cu acces din interior, luminator cu deschidere completa, Fakro.</p>
 						<p>Terasa poate fi folosita si pentru a monta panouri solare, deoarece acoperisul este lovit de lumina pe toata perioada zilei.
 				</div>
-				<video muted autoplay loop id='brakedown-1'>
+				<video muted autoplay loop id='brakedown-1' onclick='onClickDo(this.id)'>
 					<source src='./meta/videos/side-loop.mp4' type:'video.mp4'>
 					<p>Your browser does not support the video tag.</p>
 				</video>
@@ -116,7 +116,7 @@
 			<div class='padding'></div>
 
 			<div class='brakedown'>
-				<video muted autoplay loop id='brakedown-2'>
+				<video muted autoplay loop id='brakedown-2' onclick='onClickDo(this.id)'>
 					<source src='./meta/videos/top-loop.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
@@ -143,30 +143,39 @@
 						<p>Baie cu Dus</p>
 						<p>Acces pe terasa</p>
 					</div>
-					<p>Fiecare nivelele au o suprafata utila de 38m<sup>2</sup></p>
+					<p>Fiecare nivel are o suprafata utila de 38m<sup>2</sup></p>
 				</div>
 			</div>
 
+			<div class='padding'></div>
+
+
+			<!-- Real Photos -->
+
+			<div class='photos'>
+					<img src='./meta/img/real-1.jpg' class='real-image real-first'/>
+					<img src='./meta/img/real-2.jpg' class='real-image'/>
+					<img src='./meta/img/real-3.jpg' class='real-image'/>
+					<img src='./meta/img/real-4.jpg' class='real-image'/>
+					<img src='./meta/img/real-5.jpg' class='real-image'/>
+
+			</div>
+			
 			<div class='padding'></div>
 
 
 
 			<!-- Local Links -->
 
-			<div class='local-links'>
-				<img src='./meta/construction.jpg' id='construction-img'/>
+			<div class='local-link'>
+				<p>Constructie</p>
 				<a href='constructie.html' class='construction'>
 					<p>Constructie</p>
+					<img src='./meta/construction.jpg' id='construction-img'/>
 				</a>
-				<img src='./meta/documents.jpg' id='doc-img'/>
-				<div class='documents'>
-					<p>Documente</p>
-				</div>
 			</div>
 
 			<div class='padding'></div>
-			
-
 
 			<!-- Google Maps API -->
 
@@ -226,10 +235,14 @@
 			</div>
 
 
-			<div class='padding-smaller'></div>
+			<div class='padding-smaller special'></div>
 			<!-- Footer -->
 
 			<div class='padding footer'>
+				<div class='framing'>
+						<p class='designed'>Designed by <a href='https://github.com/GandalfTea' target:"_blank" >Octavian Rusu</a></p>
+						<p class='copyright'>&copy; Green Concept 2021.  All rights reserved.
+				</div>
 			</div>
 
 		</div >
