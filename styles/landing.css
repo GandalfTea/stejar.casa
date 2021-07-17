@@ -19,9 +19,11 @@
 	text-align: justify;
 }
 
+
+
 /* || VIDEO CAROUSEL */
 
-/* Menu */
+/* Not so Top-Menu */
 
 .top-menu {
 	display: flex;
@@ -116,7 +118,10 @@
 }
 
 
-/* HOUSE QUICK INFO */
+
+
+
+/* ||  HOUSE QUICK INFO */
 
 .quick-info {
 	z-index: 1;
@@ -193,19 +198,6 @@
 
 
 
-/* || MAP */
-
-#map {
-	width: 100%;
-	height: 750px;
-}
-
-.contact-map {
-	display: flex;
-	flex-direction: row;
-	background-color: #151515;
-	position: relative;
-}
 
 
 /* || 3D MODEL + TEXT */
@@ -310,7 +302,7 @@
 }
 
 .corp-casa-text {
-	background-color: #202020;
+	background-color: #252b2b;
 	margin-top: 10px;
 	padding: 10px;
 	border-radius : 7px;
@@ -433,6 +425,28 @@
 }
 
 
+
+
+
+/* || MAP */
+
+#map {
+	width: 100%;
+	height: 750px;
+}
+
+.contact-map {
+	display: flex;
+	flex-direction: row;
+	background-color: #151515;
+	position: relative;
+}
+
+
+
+
+
+
 /* || Contact Form */
 
 .see-through-contact {
@@ -440,158 +454,33 @@
 	height: 750px;
 	width: 700px;
 	right: 0px;
-	background-color: #101010;
-	opacity: 85%;
+	background-color: #191d1d;
+	opacity: 100%;
 	z-index: 1;
 }
 
 .contact-form {
-	height: 750px;
-	width: 700px;
-	position: absolute;
-	right: 0;
-	z-index: 2;
+	margin-right: 50px;
 }
 
-.contact-form p {
-	margin-bottom: 20px;
-}
-
-.contact-form label{
-	font-size: 20px;
-	color: #FFFFFF;
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
+.contact-form textarea,
+.contact-form input {
 	margin-left: 20px;
 }
 
-.contact-form textarea {
-	resize: none;
-	height: 300px;
-	width: 600px;
-	background-color: #151515;
-	border: 2px solid #505050;
-	border-radius: 2px;
-	margin-top: 10px;
-	margin-left:  50px;
-	font-size: 18px;
-
-	outline: none;
-	color: #cccccc; 
-	padding: 15px;
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
-}
-
-.contact-form textarea:focus {
-	color: #FFFFFF;
-	background-color: #303030;
-	border: 2px solid #303030;
-}
-
-.contact-form input {
-	font-size: 15px;
-	height: 40px;
-	width: 330px;
-	background-color: #151515;
-	border: 2px solid #505050;
-	border-radius: 2px;
-
-	outline: none;
-	padding: 7px;
-	padding-left: 15px;
-	color: #cccccc; 
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	margin-left:  50px;
-}
-
-.contact-form input:focus {
-	color: #FFFFFF; 
-	background-color: #303030;
-	border: 2px solid #303030;
+#contact {
+	margin-left: 20px;
 }
 
 .contact-form button {
-	height: 40px;
-	width: 100px;
-	margin-left: 550px;
-	margin-top: 20px;
-	color: #FFFFFF;
-	background-color: #101010;
-	border-radius: 2px;
-	border: 2px solid #505050;
-	color: #FFFFFF; 
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
-	font-size: 18px;
+	margin-left: 520px;
 }
 
-.contact-form button:hover {
-	background-color: #303030;
-	border: 2px solid #303030;
-}
-
-.contact-form button:active {
-	background-color: #404040;
-	border: 2px solid #404040;
-}
-
-.contact-phone {
-	margin-bottom: 10px;
-	margin-left:  50px;
-}
-
-.contact-email {
-	margin-bottom: 10px;
-	margin-left:  50px;
-}
-
-.contact-location {
-	margin-bottom: 50px;
-	margin-left:  50px;
-}
-
-
-#number {
-	color: #FFFFFF;
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
-	margin-left: 10px;
-	margin-bottom: 0px;
-}
-
-#email {
-	color: #FFFFFF;
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
-	margin-left: 10px;
-	margin-bottom: 0px;
-}
-
-#form-location {
-	color: #FFFFFF;
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
-	margin-left: 7px;
-	margin-bottom: 0px;
-}
-
-#contact {
-	font-size: 40px;
-	color: #FFFFFF;
-	font-family: "Lato", "Helvetica", "Arial", sans-serif;
-	font-weight: 100;
-	margin-bottom: 50px;
-	margin-top: 40px;
-	margin-left:  50px;
-}
 
 /* || Footer */
 
 .special {
-	height: 100px;
+	height: 150px;
 }
 
 .footer {
@@ -612,7 +501,7 @@
 .designed,
 .copyright {
 	margin: auto;
-	color: #909090;
+	color: #b0b0b0;
 	font-family: "Lato", "Helvetica", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 600;

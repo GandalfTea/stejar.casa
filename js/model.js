@@ -69,8 +69,8 @@ controls.autoRotate = true;
 controls.autoRotateSpeed = 2;
 
 camera.position.x = -30;
-camera.position.y = 18;
-camera.position.z = -15;
+camera.position.y = 30;
+camera.position.z = -3;
 
 
 function animate() {		
