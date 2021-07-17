@@ -1,6 +1,10 @@
 body {
-	height: 300vh;
+	height: 630vh;
 	background-color: #101010;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 .fundatie {
@@ -22,7 +26,6 @@ body {
 	width: 1500px;
 	left: 50%;
 	margin: auto;
-	margin-top: 10vh;
 	overflow: hidden;
 }
 
@@ -33,6 +36,7 @@ body {
 	transform: translate(50%, 100%);
 	display: flex;
 	flex-direction: column;
+	transition: 0.5s 0s;
 }
 
 .menu-link {
@@ -43,11 +47,19 @@ body {
 	text-decoration: none;
 	opacity: 50%;
 	margin-top: 35px;
+	transition: 0.5s 0s;
 }
 
 .menu-active {
 	text-shadow: 0px 0px 1px #FFFFFF;
 	opacity: 100%;
+	transition: 0.5s 0s;
+}
+
+.menu-none {
+	opacity: 0%;
+	visibility: hidden;
+	transition: 0.7s 0s;
 }
 
 .menu-link:hover {
@@ -100,11 +112,20 @@ body {
 	width: 48px;
 }
 
+.i {
+	width: 58px;
+}
+
+.s {
+	width: 50px;
+}
+
 .links {
 	position: fixed;
 	height: 30px;
 	width: 400px;
 	transform: translate(350%, 100%);
+	z-index: 3;
 }
 
 .link {
@@ -115,6 +136,13 @@ body {
 	text-decoration: none;
 	opacity: 70%;
 	margin-left: 50px;
+	transition: 0.5s 0s;
+}
+
+.link-none {
+	opacity: 0%;
+	visibility: hidden;
+	transition: 0.5s 0s;
 }
 
 .link:hover {
@@ -127,10 +155,24 @@ body {
 	font-family: "Lato", "Helvetica", "Arial", sans-serif;
 	font-weight: 200;
 	font-size: 35px;
+	margin-top: 350px;
 }
 
 .text p {
 	font-size: 18px;
 	width: 650px;
 	margin-top: 70px;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+	padding-left: 50px;
+}
+
+.contact-form button,
+.contact-form input,
+.contact-form textarea {
+	background-color: #101010;
 }

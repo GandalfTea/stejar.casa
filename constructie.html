@@ -8,6 +8,8 @@
 			<meta charset='UTF-8'/>
 			<link rel='stylesheet' href='./styles/general.css'>
 			<link rel='stylesheet' href='./styles/constructie.css'>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		</head>
 
 
@@ -15,72 +17,158 @@
 			<div class='background'>
 				<div class='links'>
 					<a href='index.html' class='link'>Prezentare</a>
-						<a href='' class='link'>Contact</a>
+						<a href='#pos_contact' class='link'>Contact</a>
 				</div>
 				<div class='menu'>
-					<a class='menu-link menu-active'>Sapatura</a>
-					<a href='' class='menu-link'>Fundatie</a>
-					<a href='' class='menu-link'>Zidarie</a>
-					<a href='' class='menu-link'>Armare si Turnare Placi</a>
-					<a href='' class='menu-link'>Instalatii sanitare si de incalzire</a>
-					<a href='' class='menu-link'>Tencuiala si Sape</a>
-					<a href='' class='menu-link'>Finisaje</a>
+					<a href='#pos_sapatura' id='menu-sapatura' class='menu-link'>Sapatura</a>
+					<a href='#pos_fundatie' id='menu-fundatie' class='menu-link'>Fundatie</a>
+					<a href='#pos_zidarie' id='menu-zidarie' class='menu-link'>Zidarie</a>
+					<a href='#pos_armare-beton' id='menu-armare-beton' class='menu-link'>Armare si Turnare Placi</a>
+					<a href='#pos_instalatii' id='menu-instalatii' class='menu-link'>Instalatii sanitare si de incalzire</a>
+					<a href='#pos_sape' id='menu-sape' class='menu-link'>Tencuiala si Sape</a>
+					<a href='#pos_finisaje' id='menu-finisaje' class='menu-link'>Finisaje</a>
 				</div>
-				<div class='page-position' id='sapatura'>
+				
+				<script src='./js/constructie.js'></script>
+				
+				<div class='page-position' id='pos_sapatura'>
 					<div class='content text'>
 						<h1>Sapatura</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
-						<div class='images'>
-							<img src='./meta/img/sapatura/sapatura-1.jpg' class='image-small first-img'/>
-							<img src='./meta/img/sapatura/sapatura-2.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/sapatura-3.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/sapatura-4.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/sapatura-6.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/sapatura-7.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/sapatura-8.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/sapatura-9.jpg' class='image-small'/>
+						<div class='images' id='sapatura'>
+							<img src='./meta/img/sapatura/r_sapatura-1.jpg' class='image-small first-img'/>
+							<img src='./meta/img/sapatura/r_sapatura-2.jpg' class='image-small'/>
+							<img src='./meta/img/sapatura/r_sapatura-3.jpg' class='image-small'/>
+							<img src='./meta/img/sapatura/r_sapatura-4.jpg' class='image-small'/>
+							<img src='./meta/img/sapatura/r_sapatura-6.jpg' class='image-small'/>
+							<img src='./meta/img/sapatura/r_sapatura-7.jpg' class='image-small'/>
+							<img src='./meta/img/sapatura/r_sapatura-8.jpg' class='image-small'/>
+							<img src='./meta/img/sapatura/r_sapatura-9.jpg' class='image-small'/>
 
 						</div>
 	
 					</div>
 				</div>
-				<div class='page-position' id='fundatie'>
+				<div class='page-position' id='pos_fundatie'>
 					<div class='content text'>
 						<h1>Fundatie</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
-						<div class='images'>
-							<img src='./meta/img/fundatie/fundatie-1.jpg' class='image-small f first-img'/>
-							<img src='./meta/img/fundatie/fundatie-2.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-3.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-4.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-6.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-7.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-8.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-9.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-10.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/fundatie-11.jpg' class='image-small f'/>
+						<div class='images' id='fundatie'>
+							<img src='./meta/img/fundatie/r_fundatie-1.jpg' class='image-small f first-img'/>
+							<img src='./meta/img/fundatie/r_fundatie-2.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-3.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-4.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-6.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-7.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-8.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-9.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-10.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-11.jpg' class='image-small f'/>
+						</div>
+	
+					</div>
+				</div> 
+				<div class='page-position' id='pos_zidarie'>
+					<div class='content text'>
+						<h1>Zidarie</h1>
+						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
+						<div class='images' id='zidarie'>
+							<img src='./meta/img/zidarie/r_zidarie-1.jpg' class='image-small z first-img'/>
+							<img src='./meta/img/zidarie/r_zidarie-2.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-3.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-4.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-5.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-6.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-7.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-8.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-9.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-10.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-11.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-12.jpg' class='image-small z'/>
 
 						</div>
 	
 					</div>
 				</div>
-				<div class='page-position' id='zidarie'>
+				<div class='page-position' id='pos_armare-beton'>
 					<div class='content text'>
-						<h1>Zidarie</h1>
+						<h1>Armare si Turnare Placi</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
-						<div class='images'>
-							<img src='./meta/img/zidarie/zidarie-1.jpg' class='image-small z first-img'/>
-							<img src='./meta/img/zidarie/zidarie-2.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-3.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-4.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-5.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-6.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-7.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-8.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-9.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-10.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-11.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/zidarie-12.jpg' class='image-small z'/>
+						<div class='images' id='armare-beton'>
+							<img src='./meta/img/armare&beton/r_armare-placi-1.jpg' class='image-small z first-img'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-2.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-3.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-4.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-5.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-6.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-7.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-8.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-9.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-10.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-11.jpg' class='image-small z'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-12.jpg' class='image-small z'/>
+
+						</div>
+	
+					</div>
+				</div>
+				<div class='page-position' id='pos_instalatii'>
+					<div class='content text'>
+						<h1>Instalatii sanitare si de incalzire</h1>
+						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
+						<div class='images' id='instalatii'>
+							<img src='./meta/img/instalatii/r_instalatii-1.jpg' class='image-small i first-img'/>
+							<img src='./meta/img/instalatii/r_instalatii-2.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-3.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-4.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-5.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-6.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-7.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-8.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-9.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-10.jpg' class='image-small i'/>
+
+						</div>
+	
+					</div>
+				</div>
+				<div class='page-position' id='pos_sape'>
+					<div class='content text'>
+							<h1> Tecuiala si Sape</h1>
+						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
+						<div class='images' id='sape'>
+							<img src='./meta/img/sape/r_sape-1.jpg' class='image-small s first-img'/>
+							<img src='./meta/img/sape/r_sape-2.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-3.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-4.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-5.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-6.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-7.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-8.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-9.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-10.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-11.jpg' class='image-small s'/>
+
+						</div>
+	
+					</div>
+				</div>
+				<div class='page-position' id='pos_finisaje'>
+					<div class='content text'>
+						<h1>Finisaje</h1>
+						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
+						<div class='images' id='finisaje'>
+							<img src='./meta/img/finisaje/r_finisaje-1.jpg' class='image-small s first-img'/>
+							<img src='./meta/img/finisaje/r_finisaje-2.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-3.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-4.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-5.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-6.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-7.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-8.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-9.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-10.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-11.jpg' class='image-small s'/>
 
 						</div>
 	
@@ -88,5 +176,39 @@
 				</div>
 			</div>
 		</body>
+			<div class='contact-form' id='pos_contact'>	
+
+				<p id='contact'>Interesat?</p>
+
+				<div class='detail contact-phone'>
+					<img src='./meta/icons/phone.png'
+						 alt='Phone Number'
+						 class='icon-small'/>
+					<div>
+						<p id='number'><a href="tel:+0751232111">(+40) 751 232 111</a></p>
+					</div>
+				</div>
+
+				<div class='detail contact-email'>
+					<img src='./meta/icons/email.png'
+						 class='icon-small'/>
+					<div>
+						<p id='email'>rusugiovani@gmail.com</p>
+					</div>
+				</div>
+
+				<form name='contact' method='POST' data-netlify='true'>
+					<p>
+						<input type='email' name='email' placeholder='Email'/></label>
+					</p>
+					<p>
+					<textarea name='message' placeholder='Salut, imi place casa. Eu si baietii vrem sa venim la un gratar la ea, ca test. Cand este disponibila?'></textarea>
+					</p>
+					<p>
+						<button type='submit'>Send</button>
+					</p>
+				</form>
+			</div>
+			</div>
    
 </html>
