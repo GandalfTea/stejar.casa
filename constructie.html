@@ -14,36 +14,70 @@
 
 
 		<body>
+
+			<!-- Elements for Fullscreen Image View -->
+			<img src='' id='fullscreen-p'/>
+			<div id='fullscreen'></div>
+
+			<button class='button' id='fullscreen-exit'>
+				<img src='./meta/icons/exit.png' id='button-exit'/>
+			</button>
+
+			<button class='button' id='fullscreen-next'>
+				<img src='./meta/icons/arrow_right.png' id='button-next'/>
+			</button>
+
+			<button class='button' id='fullscreen-prev'>
+				<img src='./meta/icons/arrow_left.png' id='button-prev'/>
+			</button>
+			
+
+			<!-- Actual page -->
 			<div class='background'>
+
+				<!-- Website page links -->
 				<div class='links'>
 					<a href='index.html' class='link'>Prezentare</a>
 						<a href='#pos_contact' class='link'>Contact</a>
 				</div>
+
+				<!-- In-page Side-menu -->
 				<div class='menu'>
 					<a href='#pos_sapatura' id='menu-sapatura' class='menu-link'>Sapatura</a>
 					<a href='#pos_fundatie' id='menu-fundatie' class='menu-link'>Fundatie</a>
 					<a href='#pos_zidarie' id='menu-zidarie' class='menu-link'>Zidarie</a>
-					<a href='#pos_armare-beton' id='menu-armare-beton' class='menu-link'>Armare si Turnare Placi</a>
+					<a href='#pos_armare-beton' id='menu-armare-placi' class='menu-link'>Armare si Turnare Placi</a>
 					<a href='#pos_instalatii' id='menu-instalatii' class='menu-link'>Instalatii sanitare si de incalzire</a>
 					<a href='#pos_sape' id='menu-sape' class='menu-link'>Tencuiala si Sape</a>
 					<a href='#pos_finisaje' id='menu-finisaje' class='menu-link'>Finisaje</a>
 				</div>
 				
 				<script src='./js/constructie.js'></script>
+
+
+				<!-- Image Categories  -->
 				
 				<div class='page-position' id='pos_sapatura'>
 					<div class='content text'>
 						<h1>Sapatura</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
 						<div class='images' id='sapatura'>
-							<img src='./meta/img/sapatura/r_sapatura-1.jpg' class='image-small first-img'/>
-							<img src='./meta/img/sapatura/r_sapatura-2.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/r_sapatura-3.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/r_sapatura-4.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/r_sapatura-6.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/r_sapatura-7.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/r_sapatura-8.jpg' class='image-small'/>
-							<img src='./meta/img/sapatura/r_sapatura-9.jpg' class='image-small'/>
+							<img src='./meta/img/sapatura/r_sapatura-1.jpg' class='image-small first-img' 
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sapatura/r_sapatura-2.jpg' class='image-small'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sapatura/r_sapatura-3.jpg' class='image-small'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sapatura/r_sapatura-4.jpg' class='image-small'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sapatura/r_sapatura-6.jpg' class='image-small'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sapatura/r_sapatura-7.jpg' class='image-small'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sapatura/r_sapatura-8.jpg' class='image-small'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sapatura/r_sapatura-9.jpg' class='image-small'
+							 onclick='openImage(this.src)'/>
 
 						</div>
 	
@@ -54,16 +88,26 @@
 						<h1>Fundatie</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
 						<div class='images' id='fundatie'>
-							<img src='./meta/img/fundatie/r_fundatie-1.jpg' class='image-small f first-img'/>
-							<img src='./meta/img/fundatie/r_fundatie-2.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-3.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-4.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-6.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-7.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-8.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-9.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-10.jpg' class='image-small f'/>
-							<img src='./meta/img/fundatie/r_fundatie-11.jpg' class='image-small f'/>
+							<img src='./meta/img/fundatie/r_fundatie-1.jpg' class='image-small f first-img'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-2.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-3.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-4.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-6.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-7.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-8.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-9.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-10.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/fundatie/r_fundatie-11.jpg' class='image-small f'
+							 onclick='openImage(this.src)'/>
 						</div>
 	
 					</div>
@@ -73,18 +117,30 @@
 						<h1>Zidarie</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
 						<div class='images' id='zidarie'>
-							<img src='./meta/img/zidarie/r_zidarie-1.jpg' class='image-small z first-img'/>
-							<img src='./meta/img/zidarie/r_zidarie-2.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-3.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-4.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-5.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-6.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-7.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-8.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-9.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-10.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-11.jpg' class='image-small z'/>
-							<img src='./meta/img/zidarie/r_zidarie-12.jpg' class='image-small z'/>
+							<img src='./meta/img/zidarie/r_zidarie-1.jpg' class='image-small z first-img'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-2.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-3.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-4.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-5.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-6.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-7.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-8.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-9.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-10.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-11.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/zidarie/r_zidarie-12.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
 
 						</div>
 	
@@ -94,19 +150,31 @@
 					<div class='content text'>
 						<h1>Armare si Turnare Placi</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
-						<div class='images' id='armare-beton'>
-							<img src='./meta/img/armare&beton/r_armare-placi-1.jpg' class='image-small z first-img'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-2.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-3.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-4.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-5.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-6.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-7.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-8.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-9.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-10.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-11.jpg' class='image-small z'/>
-							<img src='./meta/img/armare&beton/r_armare-placi-12.jpg' class='image-small z'/>
+						<div class='images' id='armare-placi'>
+							<img src='./meta/img/armare&beton/r_armare-placi-1.jpg' class='image-small z first-img'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-2.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-3.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-4.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-5.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-6.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-7.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-8.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-9.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-10.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-11.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/armare&beton/r_armare-placi-12.jpg' class='image-small z'
+							 onclick='openImage(this.src)'/>
 
 						</div>
 	
@@ -117,16 +185,26 @@
 						<h1>Instalatii sanitare si de incalzire</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
 						<div class='images' id='instalatii'>
-							<img src='./meta/img/instalatii/r_instalatii-1.jpg' class='image-small i first-img'/>
-							<img src='./meta/img/instalatii/r_instalatii-2.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-3.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-4.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-5.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-6.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-7.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-8.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-9.jpg' class='image-small i'/>
-							<img src='./meta/img/instalatii/r_instalatii-10.jpg' class='image-small i'/>
+							<img src='./meta/img/instalatii/r_instalatii-1.jpg' class='image-small i first-img'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-2.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-3.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-4.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-5.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-6.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-7.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-8.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-9.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/instalatii/r_instalatii-10.jpg' class='image-small i'
+							 onclick='openImage(this.src)'/>
 
 						</div>
 	
@@ -137,17 +215,28 @@
 							<h1> Tecuiala si Sape</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
 						<div class='images' id='sape'>
-							<img src='./meta/img/sape/r_sape-1.jpg' class='image-small s first-img'/>
-							<img src='./meta/img/sape/r_sape-2.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-3.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-4.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-5.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-6.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-7.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-8.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-9.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-10.jpg' class='image-small s'/>
-							<img src='./meta/img/sape/r_sape-11.jpg' class='image-small s'/>
+							<img src='./meta/img/sape/r_sape-1.jpg' class='image-small s first-img'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-2.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-3.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-4.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-5.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-6.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-7.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-8.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-9.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-10.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/sape/r_sape-11.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
 
 						</div>
 	
@@ -158,17 +247,28 @@
 						<h1>Finisaje</h1>
 						<p>Fundatia este fundatia casei. O fundatie este o fundatie pe care este construita casa. aldsfj alskdjfl ajsdlfk jasldfj alsdjflkasdjf lkasjdlf jasldkf jlkasdjflkasjdflk jsadlkfjas kdfklasdjf lsdajf lkajsdlf jsdlfj alsdjf lsdkjf lsajldf jasdlfj aslkfj lkasdjfl kasjdflkjasdl j</p>
 						<div class='images' id='finisaje'>
-							<img src='./meta/img/finisaje/r_finisaje-1.jpg' class='image-small s first-img'/>
-							<img src='./meta/img/finisaje/r_finisaje-2.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-3.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-4.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-5.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-6.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-7.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-8.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-9.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-10.jpg' class='image-small s'/>
-							<img src='./meta/img/finisaje/r_finisaje-11.jpg' class='image-small s'/>
+							<img src='./meta/img/finisaje/r_finisaje-1.jpg' class='image-small s first-img'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-2.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-3.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-4.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-5.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-6.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-7.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-8.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-9.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
+							<img src='./meta/img/finisaje/r_finisaje-10.jpg' class='image-small s'
+							/ onclick='openImage(this.src)'>	
+							<img src='./meta/img/finisaje/r_finisaje-11.jpg' class='image-small s'
+							 onclick='openImage(this.src)'/>
 
 						</div>
 	

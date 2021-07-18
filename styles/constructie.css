@@ -176,3 +176,116 @@ html {
 .contact-form textarea {
 	background-color: #101010;
 }
+
+
+/* OPEN IMAGE */
+
+.background-fullscreen {
+	position: fixed;
+	z-index: 4;
+	height: 100%;
+	width: 100%;
+	background-color: #101010;
+
+	transition: 0.5s 0s;
+}
+
+.picture-fullscreen {
+	position: fixed;
+	z-index: 5;
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	margin-left: 50%;
+	transform: translate(-50%, 0%);
+
+	object-fit: contain;
+	transition: 0s 0s;
+}
+
+/* OPEN IMAGE BUTTONS */
+
+.button {
+	position: fixed;
+	z-index: 6;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	opacity: 20%;
+	border: none;
+
+
+	visibility: hidden;
+}
+
+.button:hover {
+	opacity: 30%;
+	height: 55px;
+	width: 150px;
+	transition: 0.3s 0s;
+}
+
+#fullscreen-exit {
+	right: 0;
+	margin-right: 15%;
+	margin-top: 1%;
+	background-color: #505050;
+	opacity: 100%;
+	border-radius: 50px;
+}
+
+#button-exit {
+	height: 20px;
+	width: 20px;
+	position: relative;
+	margin-top: 9%;
+	object-fit: contain;
+}
+
+#fullscreen-exit:hover {
+	background-color: #606060;
+	width: 55px;
+}
+
+#fullscreen-next {
+	height: 250px;
+	right: 0;
+	margin-right: 2%;
+	margin-top: 40vh;
+	opacity: 10%;
+	transition: 0.5s 0s;
+}
+
+#button-next {
+	position: relative;
+	margin-top: 9%;
+	margin-left: 5%;
+	height: 20px;
+	width: 20px;
+	object-fit: contain;
+}
+
+#fullscreen-prev {
+	height: 250px;
+	left: 0;
+	margin-left: 2%;
+	margin-top: 40vh;
+	opacity: 10%;
+	transition: 0.5s 0s;
+}
+
+#fullscreen-prev:hover,
+#fullscreen-next:hover {
+	opacity: 20%;
+	transition: 0.5s 0s;
+}
+
+#button-prev {
+	position: relative;
+	margin-top: 9%;
+	margin-right: 5%;
+	height: 20px;
+	width: 20px;
+	object-fit: contain;
+}
