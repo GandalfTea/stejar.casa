@@ -8,6 +8,7 @@ function checkVisible(element){
 		var bottomOfElement = $(element).offset().top + $(element).innerHeight() - 100;
 		var bottomOfScreen = $(window).scrollTop() + $(window).innerHeight();
 		var topOfScreen = $(window).scrollTop();
+		var middleScreen = (bottomOfScreen - topOfScreen) / 2 + topOfScreen;
 
 		// Show side menu when not looking at contact form
 		if(deleted) {
@@ -24,10 +25,16 @@ function checkVisible(element){
 			deleted = false;
 		}
 	
+		// Check if image containers are on the screen and update side-menu
 		const tags = element.split('#')
 		var menuItem = "menu-" + tags[1];
 
 		if((bottomOfScreen > topOfElement) && (topOfScreen < bottomOfElement)){
+			
+			// On Mobile, expand the image in the middle of the screen
+			var id = element.split('#')[1];
+			var c = [].slice.call(document.getElementById(id).children);
+			c.forEach( x => checkCenter(x, middleScreen));
 			
 			// Fade side menu when looking at contact form
 			if(element === '#pos_contact') {
@@ -55,6 +62,7 @@ function checkVisible(element){
 				}
 			}
 		}
+
 	});
 }
 
@@ -220,4 +228,22 @@ function openPrev() {
 	var new_src = './meta/img/' + src + '/' + src + '-' + num + '.jpg';
 	img.src = new_src;
 	console.log(new_src);
+}
+
+
+function checkCenter(child, middleScreen) {
+	
+	// For Mobile : check if image is in center of page, and open preview
+
+	middleScreen -= 100;
+	var offset = window.pageYOffset + child.getBoundingClientRect().top;
+	if(middleScreen > offset && middleScreen < (offset + child.clientHeight)){
+		//console.log("IN MIDDLE: " + child.src);
+		if(child.nodeName === "IMG")
+			child.classList.add('image-big');
+	} else {
+		if(child.classList.contains('image-big')) {
+			child.classList.remove('image-big');
+		}
+	}
 }

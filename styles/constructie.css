@@ -7,6 +7,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+
+#line {
+	position: absolute;
+	width: 100vw;
+	height: 1px;
+	background-color: red;
+}
+
 .fundatie {
 	z-index: 2;
 }
@@ -165,6 +173,84 @@ html {
 }
 
 
+@media only screen and (max-width: 1250px) {
+	.menu {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	
+	body{
+		height: auto;
+	}
+
+	.links a {
+		font-size: 35px;
+		opacity: 100%;
+		font-weight: 400;
+		color: #777777;
+	}
+	.links {
+		position: static;
+		transform: translate(35%, 300%);
+	}
+
+	.menu {
+		font-size: 80px;
+		transform: translate(20%, 150%);
+	}
+
+	.page-position {
+		width: 600px;
+		height: auto;
+		overflow: visible;
+		margin-top: 300px;
+	}
+
+	.content {
+		margin-left: 0px;
+		margin-top: 0px;
+		height: auto;
+		transform: translate(0%, 0%);
+	}
+	.content h1 {
+		font-size: 7vw;
+		margin-top: 0vh;
+	}
+
+	.content p {
+		font-size: 40px;
+	}
+
+	.images {
+		flex-direction: column;
+		height: auto;
+	}	
+
+	.image-small {
+		height: 150px;
+		width: 600px;
+		margin-top: 30px;
+		transition: 0.7s 0s;
+	}
+
+	.image-small:hover {
+		height: 600px;
+		width: 600px;
+		transition: 0.55s 0s;
+		filter: grayscale(0%);
+	}
+
+	.image-big {
+		height: 600px;
+		width: 600px;
+		transition: 0.55s 0s;
+		filter: grayscale(0%);
+		
+	}
+}
+
 /* CONTACT FORM */
 
 .contact-form {
@@ -201,6 +287,61 @@ html {
 
 	object-fit: contain;
 	transition: 0s 0s;
+}
+
+
+@media only screen and (max-width: 1500px) {
+	
+	#contact,
+	.contact-phone,
+	.contact-email,
+	.contact-form input,
+	.contact-form textarea {
+		margin-left: 0px;
+	}
+
+	.contact-form {
+		width: 700px;
+		padding-left: 0px;
+		margin-top: 250px;
+	}
+	.contact-form input {
+		width: 400px;
+		height: 50px;
+		font-size: 30px;
+	}
+
+	.contact-form textarea {
+		width: 700px;
+		height: 400px;
+		font-size: 30px;
+	}
+
+	.contact-form button {
+		width: 150px;
+		height: 60px;
+		font-size: 30px;
+		margin-bottom: 500px;
+	}
+	
+	#contact {
+		font-size: 60px;
+	}
+
+	#number,
+	#email {
+		font-size: 30px;
+	}
+
+	.icon-small {
+		height: 25px;
+		width: 25px;
+		margin-top: 10px;
+	}
+
+	.contact-email {
+		margin-top: 20px;
+	}
 }
 
 /* OPEN IMAGE BUTTONS */
