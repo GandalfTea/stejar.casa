@@ -5,6 +5,7 @@
 <html lang='en'>
 	<head>
 		<title>Duplex</title>
+		<meta name='description' content='Casa tip duplex de vanzare sau inchiriere pentru variate scopuri private in Iasi, Romania.'>
 		<meta charset='UTF-8'/>
 		<link rel='stylesheet' href='./styles/general.css'>
 		<link rel='stylesheet' href='./styles/landing.css'>
@@ -13,9 +14,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 		</style>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src='./js/map.js'></script>
-		<script type="module" src='./js/model.js'></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	</head>
@@ -38,7 +37,7 @@
 
 					<div class='test'></div>
 
-					<video preload autoplay muted loop id='intro-video' onclick='onClickDo(this.id)'
+					<video preload autoplay muted loop id='intro-video' onclick='onClickPause(this.id)'
 							poster:'./meta/carousel_1_darker.jpg'>
 							<source src='./meta/videos/video_2.mp4' type='video/mp4'>
 							<p>Your browser does not support the video tag.</p>
@@ -59,13 +58,15 @@
 							<div class='detail'>
 								<img src='./meta/icons/location.png'
 									 alt='Location'
-									 class='icon'/>
+									 class='icon'
+									 alt='Location Icon'/>
 								<p>Stejar 103, Iasi, Rom&#226;nia</p>
 							</div>
 							<div class='detail'>
 								<img src='./meta/icons/phone.png'
 									 alt='Phone Number'
-									 class='icon-small'/>
+									 class='icon-small'
+									 alt='Phone Icon'/>
 								<div>
 									<p>(+40) 751 232 111</p>
 								</div>
@@ -107,16 +108,21 @@
 						<p> Au trei nivele: demisol, parter si etaj, cu o suprafata construita de 49m<sup>2</sup>. Terasa verde la ultimul nivel cu acces din interior, luminator cu deschidere completa, Fakro.</p>
 						<p>Terasa poate fi folosita si pentru a monta panouri solare, deoarece acoperisul este lovit de lumina pe toata perioada zilei.
 				</div>
-				<video muted autoplay loop id='brakedown-1' onclick='onClickDo(this.id)'>
+				<video muted autoplay loop id='brakedown-1' onclick='onClickPause(this.id)'>
 					<source src='./meta/videos/side-loop.mp4' type:'video.mp4'>
 					<p>Your browser does not support the video tag.</p>
 				</video>
+				<div class='text brakedown-text brakedown-min-screen'>
+						<p>Casele sunt facute independent, pe fundatii separate. Trei plansee de beton, structura pe cadre cu caramida Brikston.</p>
+						<p> Au trei nivele: demisol, parter si etaj, cu o suprafata construita de 49m<sup>2</sup>. Terasa verde la ultimul nivel cu acces din interior, luminator cu deschidere completa, Fakro.</p>
+						<p>Terasa poate fi folosita si pentru a monta panouri solare, deoarece acoperisul este lovit de lumina pe toata perioada zilei.
+				</div>
 			</div>
 			
-			<div class='padding'></div>
+			<div class='padding' id='brakedown-padding'></div>
 
 			<div class='brakedown'>
-				<video muted autoplay loop id='brakedown-2' onclick='onClickDo(this.id)'>
+				<video muted autoplay loop id='brakedown-2' onclick='onClickPause(this.id)'>
 					<source src='./meta/videos/top-loop.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
@@ -153,11 +159,15 @@
 			<!-- Real Photos -->
 
 			<div class='photos'>
-					<img src='./meta/img/c_real-1.jpg' class='real-image real-first'/>
-					<img src='./meta/img/c_real-2.jpg' class='real-image'/>
-					<img src='./meta/img/c_real-3.jpg' class='real-image'/>
-					<img src='./meta/img/c_real-4.jpg' class='real-image'/>
-					<img src='./meta/img/c_real-5.jpg' class='real-image'/>
+					<div class='photo-1'>
+						<img src='./meta/img/c_real-1.jpg' class='real-image real-first' alt='Poza cu vederea de pe un geal al casei.'/>
+						<img src='./meta/img/c_real-2.jpg' class='real-image' alt='Poza cu constructia reala.'/>
+					</div>
+					<div class='photo-2'>
+						<img src='./meta/img/c_real-3.jpg' class='real-image' id='real-second' alt='Poza cu vederea din casa.'/>
+						<img src='./meta/img/c_real-4.jpg' class='real-image' alt='Poza detaliu interior'/>
+					</div>
+					<img src='./meta/img/c_real-5.jpg' class='real-image' id='lonely' alt='Poza cu detaliu interior'/>
 
 			</div>
 			
@@ -171,7 +181,7 @@
 				<p>Constructie</p>
 				<a href='constructie.html' class='construction'>
 					<p>Constructie</p>
-					<img src='./meta/img/c_constructie.jpg' id='construction-img'/>
+					<img src='./meta/img/c_constructie.jpg' id='construction-img' alt='Poza din perioada constructiei.'/>
 				</a>
 			</div>
 
@@ -199,7 +209,8 @@
 				<div class='detail contact-phone'>
 					<img src='./meta/icons/phone.png'
 						 alt='Phone Number'
-						 class='icon-small'/>
+						 class='icon-small'
+						 alt='Contact Icon'/>
 					<div>
 						<p id='number'><a href="tel:+0751232111">(+40) 751 232 111</a></p>
 					</div>
@@ -207,7 +218,8 @@
 
 				<div class='detail contact-email'>
 					<img src='./meta/icons/email.png'
-						 class='icon-small'/>
+						 class='icon-small'
+						 alt='Email Icon'/>
 					<div>
 						<p id='email'>rusugiovani@gmail.com</p>
 					</div>
@@ -239,5 +251,8 @@
 			</div>
 
 		</div >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src='./js/map.js'></script>
+		<script type="module" src='./js/model.js'></script>
 	</body>
 </html>

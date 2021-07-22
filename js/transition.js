@@ -3,8 +3,8 @@
 
 window.setTimeout(
 	function() {
-		$('.test').fadeOut(1500);
-	}, 2000)
+		$('.test').fadeOut(1000);
+	}, 1000)
 
 
 // FUNCTIONS CALLED IN HTML
@@ -12,7 +12,7 @@ window.setTimeout(
 
 // Pause and Resume all videos on Click
 
-function onClickDo(clickedId) {
+function onClickPause(clickedId) {
 	if(!document.getElementById(clickedId).paused) {
 		document.getElementById(clickedId).pause();
 	}

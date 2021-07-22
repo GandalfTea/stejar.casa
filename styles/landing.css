@@ -203,6 +203,7 @@
 /* || 3D MODEL + TEXT */
 
 
+
 .detailed-presentation {
 	height: 800px;
 	display: flex;
@@ -256,6 +257,39 @@
 }
 
 
+@media only screen and (max-width: 1600px) {
+
+
+	.terrain-model {
+		display: block;
+		position: static;
+		flex-direction: column;
+		height: 1000px;
+	}	
+
+	#model {
+		height: 500px;
+	}
+
+	.see-through {
+		display: none;
+	}
+	
+	.terrain-model .text {
+		position: static;
+		width: 500px;
+		height: auto;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	#structura .padding {
+		height: 0px;
+	}
+}
+
+
 /* || HOUSE STRUCTURE BRAKEDOWN */
 
 
@@ -301,6 +335,10 @@
 	margin-left: 50px;
 }
 
+.brakedown-min-screen {
+	display: none;
+}
+
 .corp-casa-text {
 	background-color: #252b2b;
 	margin-top: 10px;
@@ -320,6 +358,46 @@
 }
 
 
+@media only screen and (max-width: 1600px) {
+	.brakedown {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.brakedown-text,
+	.brakedown-text-2,
+   	.brakedown-min-screen {
+		width: 500px;
+		margin: auto;
+		height: auto;
+		margin-top: 100px;
+	}
+
+	.brakedown-text {
+		display: none;
+	}
+	.brakedown-min-screen {
+		display: block;
+	}
+
+	.brakedown video {
+		width: 80%;
+		margin: auto;
+	}
+	.brakedown video:hover {
+		width: 90%;
+		margin: auto;
+	}
+
+	#brakedown-1 {
+		margin-top: 300px;
+	}
+
+	#brakedown-padding {
+		height: 100px;
+	}
+
+}
 /* Internal Links */
 
 .local-link {
@@ -386,6 +464,19 @@
 }
 
 
+@media only screen and (max-width: 1600px) {
+	.local-link {
+		width: 100%;
+	}
+
+	.local-link p {
+		margin-top: 50%;
+		margin-left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
 /* Real Photos */
 
 .photos {
@@ -424,8 +515,47 @@
 	margin-left: 0px;
 }
 
+.photo-1,
+.photo-2 {
+	display: flex;
+	flex-direction: row;
+	height: 600px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#lonely {
+	height: 600px;
+	margin: auto;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+@media only screen and (max-width: 1600px) {
+	.photos {
+		flex-direction: column;
+		height: auto;
+	}	
+
+	.real-image:hover {
+		width: 500px;
+	}
+
+	#real-second {
+		margin: auto;
+	}
+
+	#lonely {
+		display: none;
+	}
+}
 
 
+@media only screen and (max-width: 900px) {
+	.real-image:hover {
+		width: 60%;
+	}	
+}
 
 
 /* || MAP */
@@ -443,6 +573,15 @@
 }
 
 
+@media only screen and (max-width: 1600px) {
+	#map {
+		width: 100%;
+	}
+
+	.contact-map {
+		display: block;
+	}
+}
 
 
 
@@ -476,6 +615,28 @@
 	margin-left: 520px;
 }
 
+@media only screen and (max-width: 1600px) {
+	.see-through-contact {
+		display: none;
+	}
+
+	.contact-form {
+		width: 630px;
+		margin: auto;
+		margin-top: 100px;
+	}
+
+	.contact-form textarea,
+	.contact-form input,
+	.contact-form button {
+		background-color: #101010;
+	}
+
+	#email,
+	#number {
+		font-size: 20px;
+	}
+}
 
 /* || Footer */
 
@@ -530,4 +691,20 @@
 	transform: translate(-50%, 0%);
 	display: flex;
 	flex-direction: column;
+}
+
+
+@media only screen and (max-width: 1600px) {
+	.designed,
+	.copyright {
+		font-size: 20px;
+	}
+
+	.copyright {
+		width: 380px;
+	}
+
+	.framing {
+		width: auto;
+	}
 }

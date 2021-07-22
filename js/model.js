@@ -12,7 +12,7 @@ import { OrbitControls } from '../node_modules/three/examples/jsm/controls/Orbit
 let camera, scene, renderer;
 var Model;
 
-let ar = document.getElementById('model').clientWidth / 800;
+let ar = document.getElementById('model').clientWidth / document.getElementById('model').clientHeight;
 
 camera = new THREE.PerspectiveCamera( 45, ar, 0.01, 500 );
 
