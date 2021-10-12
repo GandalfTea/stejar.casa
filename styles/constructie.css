@@ -112,20 +112,29 @@ html {
 	margin-left: 0px;
 }
 
-.f {
-	width: 58px;
-}
-
-.z {
-	width: 48px;
+.u {
+	/* for 6-8 */
+	width: 70px;
 }
 
 .i {
+	/* for 8-9 */
+	width: 63px;
+}
+
+.f {
+	/* for 10 */
 	width: 58px;
 }
 
 .s {
+	/* for 11 */
 	width: 50px;
+}
+
+.z {
+	/* for 12 */
+	width: 48px;
 }
 
 .links {
@@ -177,6 +186,14 @@ html {
 	.menu {
 		display: none;
 	}
+	.content h1 {
+		font-size: 7vw;
+		margin-top: 0vh;
+	}
+
+	.content p {
+		font-size: 40px;
+	}
 }
 
 @media only screen and (max-width: 1500px) {
@@ -186,14 +203,14 @@ html {
 	}
 
 	.links a {
-		font-size: 35px;
+		font-size: 30px;
 		opacity: 100%;
 		font-weight: 400;
 		color: #777777;
 	}
 	.links {
 		position: static;
-		transform: translate(35%, 300%);
+		transform: translate(5%, 300%);
 	}
 
 	.menu {
@@ -220,7 +237,7 @@ html {
 	}
 
 	.content p {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.images {
@@ -229,26 +246,66 @@ html {
 	}	
 
 	.image-small {
-		height: 150px;
-		width: 600px;
+		height: 100px;
+		width: 450px;
+		margin: auto;
 		margin-top: 30px;
 		transition: 0.7s 0s;
 	}
 
 	.image-small:hover {
-		height: 600px;
-		width: 600px;
+		height: 300px;
+		width: 300px;
 		transition: 0.55s 0s;
 		filter: grayscale(0%);
 	}
 
 	.image-big {
-		height: 600px;
-		width: 600px;
+		height: 400px;
+		width: 500px;
 		transition: 0.55s 0s;
 		filter: grayscale(0%);
 		
 	}
+}
+
+@media only screen and (max-width:900px) {
+	
+	.background {
+		width: 100vw;
+		margin: auto;
+	}
+
+	.page-position {
+		width: 100vw;
+		overflow: hidden;
+	}
+
+	.content {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.content p {
+		width: 100%;
+		font-size: 18px;
+	}
+
+	.content h1 {
+		font-size: 35px;
+	}
+
+	.image-small {
+		width: 90%;
+	}
+
+	.image-big {
+		width: 100%;
+	}
+
+	.links a{
+		font-size: 19px;	
+	}
+	
 }
 
 /* CONTACT FORM */
@@ -276,7 +333,16 @@ html {
 	transition: 0.5s 0s;
 }
 
+.blank {
+	display: none;
+}
+
+#fullscreen-p {
+	display: none;
+}
+
 .picture-fullscreen {
+	display: block !important;
 	position: fixed;
 	z-index: 5;
 	height: 100%;
@@ -290,7 +356,12 @@ html {
 }
 
 
-@media only screen and (max-width: 1500px) {
+#submit {
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 1300px) {
 	
 	#contact,
 	.contact-phone,
@@ -300,37 +371,42 @@ html {
 		margin-left: 0px;
 	}
 
+	.contact-form button {
+		margin-left: 500px;
+	}
+
 	.contact-form {
 		width: 700px;
-		padding-left: 0px;
+		margin-left: 50%;
+		transform: translate(-50%, 0%);
 		margin-top: 250px;
 	}
 	.contact-form input {
-		width: 400px;
-		height: 50px;
-		font-size: 30px;
+		width: 300px;
+		height: 40px;
+		font-size: 25px;
 	}
 
 	.contact-form textarea {
-		width: 700px;
-		height: 400px;
-		font-size: 30px;
+		width: 600px;
+		height: 300px;
+		font-size: 25px;
 	}
 
 	.contact-form button {
-		width: 150px;
-		height: 60px;
-		font-size: 30px;
+		width: 100px;
+		height: 50px;
+		font-size: 25px;
 		margin-bottom: 500px;
 	}
 	
 	#contact {
-		font-size: 60px;
+		font-size: 50px;
 	}
 
 	#number,
 	#email {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	.icon-small {
@@ -344,6 +420,46 @@ html {
 	}
 }
 
+@media only screen and (max-width:900px) {
+	#pos_contact {
+		width: 100%;
+		overflow: hidden;
+	}
+	#pos_contact input,
+	#pos_contact textarea {
+		width: 90%;
+		font-size: 18px;
+	}
+
+	#number,
+	#email {
+		font-size: 18px;
+	}
+
+	.icon-small {
+		height: 18px;
+		width: 18px;
+		margin-top: 2px;
+	}
+
+	#submit {
+		margin-left: 50vw;
+		font-size: 18px;
+		height: 40px;
+	}
+}
+
+/* Footer */
+
+.framing {
+	margin-top: 100px;
+}
+
+.designed {
+	margin-top: 8vh;
+}
+
+
 /* OPEN IMAGE BUTTONS */
 
 .button {
@@ -352,7 +468,7 @@ html {
 	height: 50px;
 	width: 50px;
 	border-radius: 5px;
-	background-color: #FFFFFF;
+	background-color: #AAAAAA;
 	opacity: 20%;
 	border: none;
 
@@ -394,7 +510,7 @@ html {
 	right: 0;
 	margin-right: 2%;
 	margin-top: 40vh;
-	opacity: 10%;
+	opacity: 50%;
 	transition: 0.5s 0s;
 }
 
@@ -412,13 +528,13 @@ html {
 	left: 0;
 	margin-left: 2%;
 	margin-top: 40vh;
-	opacity: 10%;
+	opacity: 50%;
 	transition: 0.5s 0s;
 }
 
 #fullscreen-prev:hover,
 #fullscreen-next:hover {
-	opacity: 20%;
+	opacity: 80%;
 	transition: 0.5s 0s;
 }
 
@@ -429,4 +545,20 @@ html {
 	height: 20px;
 	width: 20px;
 	object-fit: contain;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+	.button:hover {
+		opacity: 80%;
+		height: 50px;
+		width: 50px;
+	}
+
+	#fullscreen-exit {
+		margin-top: 10%;
+		width: 100px;
+	}
+
 }

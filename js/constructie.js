@@ -82,10 +82,10 @@ checkVisible('#pos_contact');
 /* OPEN FULL SCREEN IMAGE */
 
 const cat = { 'sapatura': 9,
-			  'fundatie' : 11,
+			  'fundatie' : 10,
 			  'zidarie' : 12,
-			  'armare-placi' : 12,
-			  'instalatii' : 10,
+			  'armare-placi' : 10,
+			  'instalatii' : 8,
 			  'sape' : 11,
 			  'finisaje' : 11 };
 
@@ -144,14 +144,15 @@ function openImage(r_src) {
 
 
 function closeImage() {
-	document.getElementById('fullscreen-exit').style.visibility = 'hidden';
 	document.getElementById('fullscreen-next').style.visibility = 'hidden';
+	document.getElementById('fullscreen-exit').style.visibility = 'hidden';
 	document.getElementById('fullscreen-prev').style.visibility = 'hidden';
 
 	var background = document.getElementById('fullscreen');
 	background.classList.remove('background-fullscreen');
 
 	var picture = document.getElementById('fullscreen-p');	
+	picture.classList.remove('picture-fullscreen');
 	picture.innerHTML = '';
 	picture.src = '';
 		
@@ -231,9 +232,15 @@ function openPrev() {
 }
 
 
+
+
+
+/*  MOBILE VIEW IMAGE PREVIEW 
+	Call in checkVisible() */
+
 function checkCenter(child, middleScreen) {
 	
-	// For Mobile : check if image is in center of page, and open preview
+	// if image is in center of page, open preview
 
 	middleScreen -= 100;
 	var offset = window.pageYOffset + child.getBoundingClientRect().top;

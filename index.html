@@ -4,29 +4,41 @@
 
 <html lang='en'>
 	<head>
-		<title>Duplex</title>
-		<meta name='description' content='Casa tip duplex de vanzare sau inchiriere pentru variate scopuri private in Iasi, Romania.'>
+		<title>Green Concept</title>
+		<meta name='description' content='Casa tip duplex de vanzare sau inchiriere in Iasi, Romania.'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+		<link rel='icon' href='' type='image/x-icon'>
+		<link rel='canonical' href='https://stejar.casa'/>
 		<meta charset='UTF-8'/>
+		<link rel='icon' type='image/png' href='./meta/img/favicon.png'>
+
+		<meta property='og:locale' content='ro_RO'>
+		<meta property='og:type' content='website'>
+		<meta property='og:description' content='Casa tip duplex de vanzare sau inchiriere in Iasi, Romania'>
+		<meta property='og:title' content='Green Concept'>
+		<meta property='og:url' content='https://stejar.casa'>
+		<meta property='og:image' content='./meta/img/carousel_1.jpg'>
+		<meta property='site_name' content='Green Concept'>
+		<meta property='twitter:card' content='summary_large_image'>
+		<meta property='twitter:image:alt' content='O poza a duplex-ului.'>
+
 		<link rel='stylesheet' href='./styles/general.css'>
 		<link rel='stylesheet' href='./styles/landing.css'>
 
-		<style>
-		@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-		</style>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<script src='./js/map.js'></script>
+		<script src='./js/transition.js'></script>
 
 	</head>
+
 	<body>
 		<div class='max_page_width'>
 			<div class='video'>
 				<div class='top-menu'>
 					<a href='#teren' class='menu-button'>Teren</a>
-					<a href='#structura' class='menu-button'>Structura</a>
+					<a href='#brakedown-tag' class='menu-button'>Structura</a>
 					<a href='constructie.html' class='menu-button'>Constructie</a>
-					<a href='' class='menu-button'>Poze</a>
-					<a href='' class='menu-button'>Contact</a>
+					<a href='#photos-tag' class='menu-button'>Poze</a>
+					<a href='#contact-tag' class='menu-button'>Contact</a>
 				</div>
 				<div class='title'>
 					<p id='welcome_name'><strong>Green Concept</strong></p>
@@ -46,16 +58,16 @@
 			</div>
 			
 
-			<script src='./js/transition.js'></script>
 
 
 			<!-- Location, Sizes and Phone Number -->
 			<div class='quick-info'>
 				<div class='align-horizontal'>
+					<img src='./meta/img/logo-lighter.svg' id='logo-img'>
 					<p id='info-sentance'>Cl&#259;dire tip duplex cu acces din strada <i>Stejar</i>, zona Ion Creang&#259;. Poate fi folosit&#259; &#238;n scop reziden&#539;ial sau variate scopuri private, precum cabinet medical, sediu de firm&#259;, birou, etc. De &#238;nchiriat sau cump&#259;rat.</p>
 					<p id='selling-point'>8 minute pana la aeroportul international, centru sau Palas</p>
 					<div class='align-vertical'>
-							<div class='detail'>
+							<div class='detail detail-1'>
 								<img src='./meta/icons/location.png'
 									 alt='Location'
 									 class='icon'
@@ -63,12 +75,12 @@
 								<p>Stejar 103, Iasi, Rom&#226;nia</p>
 							</div>
 							<div class='detail'>
-								<img src='./meta/icons/phone.png'
+								<img src='./meta/icons/email.png'
 									 alt='Phone Number'
 									 class='icon-small'
 									 alt='Phone Icon'/>
 								<div>
-									<p>(+40) 751 232 111</p>
+									<p>stejar.casa@gmail.com</p>
 								</div>
 							</div>
 					</div>
@@ -86,10 +98,9 @@
 					<canvas id='model'></canvas>
 					<div class='see-through'></div>
 					<div class='text'>
-						<p>Terenul este pozitionat langa padure, cu acces rapid catre restul orasului, la 5 minute de parcul de agrement Ciric</p>
-						<p>Ambele case includ cate 2 locuri de parcare, cu numar cadastral separat.</p>
-						<p>Corpul cu acces la strada este destinat inchirierii, avand o suprafata de 125 m<sup>2</sup>. Vine cu un teren de 150 m<sup>2</sup>.</p>
-						<p>Corpul 2 este preferat pentru utilizare rezidentiala, deoarece vine cu o suprafata mai mare de teren, 434m<sup>2</sup> ce poate fi potential transfromata intr-o terasa cu piscina.</p> 
+						<p>Terenul este pozi&#355;ionat l&#226;ng&#259;	 p&#259;dure, cu acces rapid c&#259;tre restul ora&#351;ului, la 5 minute de parcul de agrement Ciric. Ambele case includ c&#226;te 2 locuri de parcare, cu num&#259;r cadastral separat.</p>
+						<p>Corpul cu acces la strad&#259; este destinat &#238;nchirierii, av&#226;nd o suprafa&#355;&#259; de 125 m<sup>2</sup>. Vine cu un teren de 230 m<sup>2</sup>.</p>
+						<p>Corpul 2 este preferat pentru utilizare reziden&#355;ial&#259;, deoarece vine cu o suprafa&#355;&#259; mai mare de teren, 424m<sup>2</sup> ce poate fi poten&#355;ial transformat&#259; &#238;ntr-o teras&#259; cu piscin&#259;.</p> 
 
 					</div>
 				</div>
@@ -102,28 +113,52 @@
 			<!-- Interior Presentation -->
 			
 
-			<div class='brakedown'>
+			<div class='brakedown' id='brakedown-tag'>
 				<div class='text brakedown-text'>
-						<p>Casele sunt facute independent, pe fundatii separate. Trei plansee de beton, structura pe cadre cu caramida Brikston.</p>
-						<p> Au trei nivele: demisol, parter si etaj, cu o suprafata construita de 49m<sup>2</sup>. Terasa verde la ultimul nivel cu acces din interior, luminator cu deschidere completa, Fakro.</p>
-						<p>Terasa poate fi folosita si pentru a monta panouri solare, deoarece acoperisul este lovit de lumina pe toata perioada zilei.
+						<p>Casele sunt f&#259;cute independent, pe funda&#355;ii separate. Trei plan&#351;ee de beton, structur&#259; pe cadre cu c&#259;r&#259;mid&#259; Brikston.</p>
+						<p> Au trei nivele: demisol, parter si etaj, cu o suprafa&#355;&#259; construit&#259; de 49m<sup>2</sup>. Teras&#259; verde la ultimul nivel cu acces din interior, luminator cu deschidere complet&#259;, Fakro.</p>
+						<p>Terasa poate fi folosit&#259; &#351;i pentru a monta panouri solare.</p>
 				</div>
-				<video muted autoplay loop id='brakedown-1' onclick='onClickPause(this.id)'>
-					<source src='./meta/videos/side-loop.mp4' type:'video.mp4'>
+				<video muted autoplay loop class='lazy' id='brakedown-1' onclick='onClickPause(this.id)'>
+					<source type='video/mp4' data-src='./meta/videos/side-loop.mp4' type:'video.mp4'>
 					<p>Your browser does not support the video tag.</p>
 				</video>
 				<div class='text brakedown-text brakedown-min-screen'>
-						<p>Casele sunt facute independent, pe fundatii separate. Trei plansee de beton, structura pe cadre cu caramida Brikston.</p>
-						<p> Au trei nivele: demisol, parter si etaj, cu o suprafata construita de 49m<sup>2</sup>. Terasa verde la ultimul nivel cu acces din interior, luminator cu deschidere completa, Fakro.</p>
-						<p>Terasa poate fi folosita si pentru a monta panouri solare, deoarece acoperisul este lovit de lumina pe toata perioada zilei.
+						<p>Casele sunt f&#259;cute independent, pe funda&#355;ii separate. Trei plan&#351;ee de beton, structur&#259; pe cadre cu c&#259;r&#259;mid&#259; Brikston.</p>
+						<p> Au trei nivele: demisol, parter si etaj, cu o suprafa&#355;&#259; construit&#259; de 49m<sup>2</sup>. Teras&#259; verde la ultimul nivel cu acces din interior, luminator cu deschidere complet&#259;, Fakro.</p>
+						<p>Terasa poate fi folosit&#259; &#351;i pentru a monta panouri solare.</p>
 				</div>
 			</div>
 			
-			<div class='padding' id='brakedown-padding'></div>
+			<div class='padding' id='photos-tag'></div>
+
+
+
+
+			<!-- Real Photos -->
+
+			<div class='photos'>
+					<div class='photo-1'>
+						<img data-src='./meta/img/c_real-1.jpg' class='lazy real-image real-first' alt='Poza cu vederea de pe un geal al casei.'/>
+						<img data-src='./meta/img/c_real-2.jpg' class='lazy real-image' alt='Poza cu constructia reala.'/>
+					</div>
+					<div class='photo-2'>
+						<img data-src='./meta/img/c_real-3.jpg' class='lazy real-image' id='real-second' alt='Poza cu vederea din casa.'/>
+						<img data-src='./meta/img/c_real-4.jpg' class='lazy real-image' alt='Poza detaliu interior'/>
+					</div>
+					<img src='./meta/img/c_real-5.jpg' class='real-image' id='lonely' alt='Poza cu detaliu interior'/>
+
+			</div>
+			
+			<div class='padding' id='padding-brakedown'></div>
+
+
+
+			<!-- Interior Presentation -->
 
 			<div class='brakedown'>
-				<video muted autoplay loop id='brakedown-2' onclick='onClickPause(this.id)'>
-					<source src='./meta/videos/top-loop.mp4' type:'video/mp4' >
+				<video muted autoplay loop class='lazy' id='brakedown-2' onclick='onClickPause(this.id)'>
+					<source data-src='./meta/videos/top-loop.mp4' type:'video/mp4' >
 					<p>Your browser does not support the video tag.</p>
 				</video>
 				<div class='text brakedown-text-2'>
@@ -138,7 +173,7 @@
 					
 					<p class='brakedown-title'>Parter</p>
 					<div class='corp-casa-text'>
-						<p>Living cu bucaratie open-space</p>
+						<p>Living cu bucatarie open-space</p>
 						<p>Birou / Posibilitate de bucatarie separata</p>
 						<p>Baie de serviciu</p>
 					</div>
@@ -155,29 +190,9 @@
 
 			<div class='padding'></div>
 
-
-			<!-- Real Photos -->
-
-			<div class='photos'>
-					<div class='photo-1'>
-						<img src='./meta/img/c_real-1.jpg' class='real-image real-first' alt='Poza cu vederea de pe un geal al casei.'/>
-						<img src='./meta/img/c_real-2.jpg' class='real-image' alt='Poza cu constructia reala.'/>
-					</div>
-					<div class='photo-2'>
-						<img src='./meta/img/c_real-3.jpg' class='real-image' id='real-second' alt='Poza cu vederea din casa.'/>
-						<img src='./meta/img/c_real-4.jpg' class='real-image' alt='Poza detaliu interior'/>
-					</div>
-					<img src='./meta/img/c_real-5.jpg' class='real-image' id='lonely' alt='Poza cu detaliu interior'/>
-
-			</div>
-			
-			<div class='padding'></div>
-
-
-
 			<!-- Local Links -->
 
-			<div class='local-link'>
+			<div class='local-link' id='constructie'>
 				<p>Constructie</p>
 				<a href='constructie.html' class='construction'>
 					<p>Constructie</p>
@@ -202,14 +217,14 @@
 			<!-- Contact Form -->
 
 			<div class='see-through-contact'></div>
-			<div class='contact-form'>	
+			<div class='contact-form' id='contact-tag'>	
 
 				<p id='contact'>Interesat?</p>
 
 				<div class='detail contact-phone'>
-					<img src='./meta/icons/phone.png'
+					<img data-src='./meta/icons/phone.png'
 						 alt='Phone Number'
-						 class='icon-small'
+						 class='lazy icon-small'
 						 alt='Contact Icon'/>
 					<div>
 						<p id='number'><a href="tel:+0751232111">(+40) 751 232 111</a></p>
@@ -221,7 +236,7 @@
 						 class='icon-small'
 						 alt='Email Icon'/>
 					<div>
-						<p id='email'>rusugiovani@gmail.com</p>
+						<p id='email'>stejar.casa@gmail.com</p>
 					</div>
 				</div>
 
@@ -241,9 +256,13 @@
 
 
 			<div class='padding-smaller special'></div>
+
+
+
 			<!-- Footer -->
 
 			<div class='padding footer'>
+				<img src='./meta/img/logo-solo.svg' id='logo-img-footer'>
 				<div class='framing'>
 						<p class='designed'>Designed by <a href='https://github.com/GandalfTea' target:"_blank" >Octavian Rusu</a></p>
 						<p class='copyright'>&copy; Green Concept 2021.  All rights reserved.
@@ -252,7 +271,11 @@
 
 		</div >
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src='./js/map.js'></script>
 		<script type="module" src='./js/model.js'></script>
+		<script src='./js/button_mouse.js'></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+		<script>
+			var lazyLoadInstance = new LazyLoad();
+		</script>
 	</body>
 </html>
